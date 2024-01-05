@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KROVATO</title>
     <link rel="icon" type="image/x-icon" href="./images/favicon.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -39,16 +42,23 @@
             <ul>
                 <li>
                     <a href="https://www.whatsapp.com/?lang=uk" target="_blank" rel="noreferrer noopener">
-                        <img src="./images/whatsapp.svg" alt="whatsapp icon" width="30"></a>
+                        <svg width="30" height="30">
+                            <use href="./images/symbol-defs.svg#icon-whatsapp"></use>
+                        </svg>
+                    </a>
                 </li>
                 <li>
                     <a href="https://web.telegram.org/a/" target="_blank" rel="noreferrer noopener">
-                        <img src="./images/telegram.svg" alt="Telegram icon" width="30">
+                        <svg width="30" height="30">
+                            <use href="./images/symbol-defs.svg#icon-telegram"></use>
+                        </svg>
                     </a>
                 </li>
                 <li>
                     <a href="https://www.viber.com/ru/" target="_blank" rel="noreferrer noopener">
-                        <img src="./images/viber.svg" alt="Viber icon" width="30">
+                        <svg width="30" height="30">
+                            <use href="./images/symbol-defs.svg#icon-viber"></use>
+                        </svg>
                     </a>
                 </li>
             </ul>
@@ -61,14 +71,18 @@
 
         <div class="main-header">
             <a href="/index.html">
-                <img src="./images/logo-header.svg" alt="Krovato logo" width="250">
+                <svg width="250" height="50">
+                    <use href="./images/symbol-defs.svg#icon-logo-header"></use>
+                </svg>
             </a>
 
             <a href="">Каталог</a>
 
             <input type="text" placeholder="Пошук товарів">
             <p>Щодня з 9:00 до 18:00</p>
-            <img src="./images/icon-tel.svg" alt="Phone icon" width="50">
+            <svg width="50" height="50">
+                <use href="./images/symbol-defs.svg#icon-icon-tel"></use>
+            </svg>
             <a href="tel:+380679294545">067 929-45-45</a>
 
             <ul>
@@ -427,9 +441,298 @@
             </ul>
 
         </section>
+        <section>
+            <h2>Останні відгуки</h2>
+            <img src="./images/favicon.svg" alt="logo">
+            <h3>Магазин меблів для дому «KROVATO»</h3>
+            <ul>
+                <li>
+                    <button type="button">
+                        <img src="./images/write-response-icon.svg" alt="write-response-icon" width="20">
+                        Написати відгук
+                    </button>
+                </li>
+                <li>
+                    <button type="button">
+                        <img src="./images/response-icon.svg" alt="response-icon" width="20">
+                        Всі відгуки
+                    </button>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <img src="./images/avatar-icon.svg" alt="Avatar icon">
+                    <h4>Іван Стедниця</h4>
+                    <p>25.01.2022</p>
+                    <ul>
+                        <li><img src="./images/star.svg" alt=""></li>
+                        <li><img src="./images/star.svg" alt=""></li>
+                        <li><img src="./images/star.svg" alt=""></li>
+                        <li><img src="./images/star.svg" alt=""></li>
+                        <li><img src="./images/star.svg" alt=""></li>
+                    </ul>
+                    <p>Хочу отметить слаженную и четкую работу всех сотрудников , с кем пришлось контактировать при
+                        выборе и
+                        покупке дивана
+                        Orange-Line Родео SF17-LX6-PLNGR. Огромную помощь при выборе оказала специалист по продажам
+                        Ульяна ...
+                    </p>
+                    <a href="">
+                        <img src="./images/tovar-icon.svg" alt="Tovar icon">
+                        <h4>Диван Orange-Line Родео SF...</h4>
+                    </a>
+                </li>
+                <li>
+                    <img src="./images/avatar-icon.svg" alt="Avatar icon">
+                    <h4>Іван Стедниця</h4>
+                    <p>25.01.2022</p>
+                    <ul>
+                        <li><img src="./images/star.svg" alt=""></li>
+                        <li><img src="./images/star.svg" alt=""></li>
+                        <li><img src="./images/star.svg" alt=""></li>
+                        <li><img src="./images/star.svg" alt=""></li>
+                        <li><img src="./images/star.svg" alt=""></li>
+                    </ul>
+                    <p>Хочу отметить слаженную и четкую работу всех сотрудников , с кем пришлось контактировать при
+                        выборе и
+                        покупке дивана
+                        Orange-Line Родео SF17-LX6-PLNGR. Огромную помощь при выборе оказала специалист по продажам
+                        Ульяна ...
+                    </p>
+                    <a href="">
+                        <img src="./images/tovar-icon.svg" alt="Tovar icon">
+                        <h4>Диван Orange-Line Родео SF...</h4>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Свіжі статті та останні новини</h2>
+            <a href="">
+                <p>Читати блог</p>
+                <img src="./images/arrow.svg" alt="Arrow icon" width="12">
+            </a>
+            <ul>
+                <li>
+                    <article>
+                        <img src="./images/article-1.jpg" alt="Article image" width="410">
+                        <h3>Стільці для вітальні. Як правильно вибрати?</h3>
+                        <a href="">
+                            <p>Детальніше</p>
+                            <img src="./images/arrow.svg" alt="Arrow icon" width="12">
+                        </a>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <img src="./images/article-2.jpg" alt="Article image" width="410">
+                        <h3>Що краще вибрати для кухні – стільці чи кухонний куточок?</h3>
+                        <a href="">
+                            <p>Детальніше</p>
+                            <img src="./images/arrow.svg" alt="Arrow icon" width="12">
+                        </a>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <img src="./images/article-3.jpg" alt="Article image" width="410">
+                        <h3>Оформлення вітальні. Які м'які меблі краще вибрати?</h3>
+                        <a href="">
+                            <p>Детальніше</p>
+                            <img src="./images/arrow.svg" alt="Arrow icon" width="12">
+                        </a>
+                    </article>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>KROVATO - коли потрібні якісні меблі за доступною ціною!</h2>
+            <p>Якщо в пошуковий рядок браузера ввести запит: «Куплю ліжко, шафу, диван», система видасть сотні
+                продавців, що
+                спеціалізуються з продажу цього товару. Але далеко не всі магазини та сайти в інтернеті можуть
+                запропонувати такий самий
+                різноманітний асортимент, як наша компанія. Та й з нашими цінами конкурувати можуть мало хто. Адже товар
+                ми отримуємо
+                безпосередньо від виробників, не переплачуючи за послуги посередників. До того ж, продажі ми ведемо як
+                онлайн, так і в
+                салоні, при цьому ціна на асортимент онлайн та офлайн - однакова.
+                Ми співпрацюємо тільки з найкращими вітчизняними та зарубіжними фабриками та компаніями, які отримали
+                визнання покупців
+                та експертів меблевої справи. Для нас важливо, щоб товар, який ми продаємо, відповідав міжнародним
+                стандартам якості,
+                був із сертифікованих матеріалів – довговічних, красивих та екологічно чистих. Ми з особливою
+                ретельністю відбираємо
+                пропозиції для магазину, тому можемо поручитися за їхню якість і впевнено рекомендувати клієнтам. У нас
+                ви легко
+                знайдете меблеві серії в класичному та модерному стилі, лінійки для оформлення житла в дусі романтики
+                або
+                скандинавського лаконізму.</p>
+            <ul>
+                <li>
+                    <img src="./images/delivery-icon.svg" alt="delivery-icon" width="80">
+                    <h3>Безкоштовна доставка</h3>
+                </li>
+                <li>
+                    <img src="./images/assembly-icon.svg" alt="assembly-icon" width="80">
+                    <h3>Безкоштовна збірка</h3>
+                </li>
+                <li>
+                    <img src="./images/service-icon.svg" alt="service-icon" width="80">
+                    <h3>Післягарантійне обслуговування</h3>
+                </li>
+                <li>
+                    <img src="./images/discount-icon.svg" alt="discount-icon" width="80">
+                    <h3>Знижки клієнтам</h3>
+                </li>
+            </ul>
+        </section>
     </main>
     <footer>
+        <a href="./index.html">
+            <img src="./images/logo-footer.svg" alt="logo footer">
+        </a>
+        <p>Приєднуйтесь:</p>
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">
+                    <img src="./images/facebook-icon.svg" alt="Facebook icon" width="40">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener">
+                    <img src="./images/instagram-icon.svg" alt="Instagram icon" width="40">
+                </a>
+            </li>
+        </ul>
 
+        <p>Допомога і консультація:</p>
+        <ul>
+            <li>
+                <a href="https://www.whatsapp.com/?lang=uk" target="_blank" rel="noreferrer noopener">
+                    <img src="./images/whatsapp.svg" alt="whatsapp icon" width="30"></a>
+            </li>
+            <li>
+                <a href="https://web.telegram.org/a/" target="_blank" rel="noreferrer noopener">
+                    <img src="./images/telegram.svg" alt="Telegram icon" width="30">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.viber.com/ru/" target="_blank" rel="noreferrer noopener">
+                    <img src="./images/viber.svg" alt="Viber icon" width="30">
+                </a>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <a href="">
+                    <img src="./images/visa-icon.svg" alt="Visa icon" width="70">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./images/mastercard-icon.svg" alt="Mastercard icon" width="89">
+                </a>
+            </li>
+        </ul>
+
+        <p>Інформація</p>
+        <ul>
+            <li>
+                <a href="">Про нас</a>
+            </li>
+            <li>
+                <a href="">Оплата</a>
+            </li>
+            <li>
+                <a href="">Доставка та збірка</a>
+            </li>
+            <li>
+                <a href="">Відгуки</a>
+            </li>
+            <li>
+                <a href="">Блог</a>
+            </li>
+            <li>
+                <a href="">Контакти</a>
+            </li>
+            <li>
+                <a href="">Мапа сайту</a>
+            </li>
+        </ul>
+
+        <p>Категорії</p>
+        <ul>
+            <li>
+                <a href="">Ліжка</a>
+            </li>
+            <li>
+                <a href="">Матраци</a>
+            </li>
+            <li>
+                <a href="">М’які меблі</a>
+            </li>
+            <li>
+                <a href="">Шафи</a>
+            </li>
+            <li>
+                <a href="">Комоди</a>
+            </li>
+            <li>
+                <a href="">Тумби</a>
+            </li>
+            <li>
+                <a href="">Стільці</a>
+            </li>
+            <li>
+                <a href="">Меблеві стіни</a>
+            </li>
+            <li>
+                <a href="">Кухні</a>
+            </li>
+        </ul>
+
+        <p>Клієнтам</p>
+        <ul>
+            <li>
+                <a href="">Акції</a>
+            </li>
+            <li>
+                <a href="">Розпродаж</a>
+            </li>
+            <li>
+                <a href="">Купити в кредит</a>
+            </li>
+            <li>
+                <a href="">Обмін і повернення товару</a>
+            </li>
+            <li>
+                <a href="">Часто задавані питання</a>
+            </li>
+            <li>
+                <a href="">Умови покупки</a>
+            </li>
+            <li>
+                <a href="">Політика конфіденційності</a>
+            </li>
+        </ul>
+
+        <img src="./images/tel-icon.svg" alt="Telephone icon" width="50">
+        <ul>
+            <li><a href="tel:+380679294545">+38 067 929-45-45</a></li>
+            <li><a href="tel:+380501334545">+38 050 133-45-45</a></li>
+            <li><a href="tel:+380931707545">+38 093 170-75-45</a></li>
+        </ul>
+        <button type="button">Передзвоніть мені</button>
+        <img src="./images/adress-icon.svg" alt="Adress icon" width="50">
+        <address>
+            м. Київ, провулок Ізяславський 52, поверх 2
+        </address>
+        <img src="./images/calendar-icon.svg" alt="calendar icon" width="50">
+        <p>Працюємо щодня з 9:00 до 18:00</p>
+
+        <p>&copy; KROVATO - Технології сну - 2022. Всі права захищені.</p>
     </footer>
 </body>
 
