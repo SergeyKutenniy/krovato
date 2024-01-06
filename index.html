@@ -16,93 +16,102 @@
 <body class="page">
     <header class="">
         <div class="pre-header">
-            <div class="container">
-                <ul>
-                    <li>
-                        <a href="">Про нас</a>
-                    </li>
-                    <li>
-                        <a href="">Оплата</a>
-                    </li>
-                    <li>
-                        <a href="">Доставка та збірка</a>
-                    </li>
-                    <li>
-                        <a href="">Відгуки</a>
-                    </li>
-                    <li>
-                        <a href="">Блог</a>
-                    </li>
-                    <li>
-                        <a href="">Контакти</a>
-                    </li>
-                    <li>
-                        <a href="">Допомога і консультація:</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <a href="https://www.whatsapp.com/?lang=uk" target="_blank" rel="noreferrer noopener">
-                            <svg width="30" height="30">
-                                <use href="./images/symbol-defs.svg#whatsapp-icon"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://web.telegram.org/a/" target="_blank" rel="noreferrer noopener">
-                            <svg width="30" height="30">
-                                <use href="./images/symbol-defs.svg#telegram-icon"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.viber.com/ru/" target="_blank" rel="noreferrer noopener">
-                            <svg width="30" height="30">
-                                <use href="./images/symbol-defs.svg#viber-icon"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-                <label class="language-select" for="language">UK</label>
-                <select id="language" name="language">
-                    <option value="uk">UK</option>
-                    <option value="eng">ENG</option>
-                </select>
+            <div class="container pre-header__common">
+                <nav>
+                    <ul class="pre-header__menu">
+                        <li class="pre-header__menu-item">
+                            <a class="pre-header__menu-link" href="">Про нас</a>
+                        </li>
+                        <li class="pre-header__menu-item">
+                            <a class="pre-header__menu-link" href="">Оплата</a>
+                        </li>
+                        <li class="pre-header__menu-item">
+                            <a class="pre-header__menu-link" href="">Доставка та збірка</a>
+                        </li>
+                        <li class="pre-header__menu-item">
+                            <a class="pre-header__menu-link" href="">Відгуки</a>
+                        </li>
+                        <li class="pre-header__menu-item">
+                            <a class="pre-header__menu-link" href="">Блог</a>
+                        </li>
+                        <li class="pre-header__menu-item">
+                            <a class="pre-header__menu-link" href="">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="pre-header__social">
+                    <a class="pre-header__help-link" href="">Допомога і консультація:</a>
+                    <ul class="pre-header__messengers">
+                        <li class="pre-header__messengers-item">
+                            <a class="pre-header__messengers-link" href="https://www.whatsapp.com/?lang=uk"
+                                target="_blank" rel="noreferrer noopener">
+                                <svg class="messengers-icon" width="30" height="30">
+                                    <use href="./images/symbol-defs.svg#whatsapp-icon"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="pre-header__messengers-item">
+                            <a class="pre-header__messengers-link" href="https://web.telegram.org/a/" target="_blank"
+                                rel="noreferrer noopener">
+                                <svg class="messengers-icon" width="30" height="30" aria-hidden="true">
+                                    <use href="./images/symbol-defs.svg#telegram-icon"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="pre-header__messengers-item">
+                            <a class="pre-header__messengers-link" href="https://www.viber.com/ru/" target="_blank"
+                                rel="noreferrer noopener">
+                                <svg class="messengers-icon" width="30" height="30">
+                                    <use href="./images/symbol-defs.svg#viber-icon"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <label class="language-select" for="language">UK</label>
+                    <select id="language" name="language">
+                        <option value="uk">UK</option>
+                        <option value="eng">ENG</option>
+                    </select>
+                </div>
             </div>
         </div>
 
-        <div class="main-header">
-            <div class="container">
-                <a href="/index.html">
+        <div class="">
+            <div class="container main-header">
+                <a class="main-header__logo" href="/index.html">
                     <svg width="250" height="50">
                         <use href="./images/symbol-defs.svg#logo-header-icon"></use>
                     </svg>
                 </a>
 
-                <button class="btn" type="button">
-                    <svg width="24" height="24">
+                <button class="btn main-header__btn" type="button">
+                    <svg class="main-header__btn-icon" width="24" height="24">
                         <use href="./images/symbol-defs.svg#catalog-icon"></use>
                     </svg>
                     Каталог
                 </button>
 
-                <input type="text" placeholder="Пошук товарів">
-                <p>Щодня з 9:00 до 18:00</p>
-                <svg width="50" height="50">
-                    <use href="./images/symbol-defs.svg#tel-header-icon"></use>
-                </svg>
-                <a class="main-header__tel" href="tel:+380679294545">067 929-45-45</a>
+                <label class="main-header__label">
+                    <input class="main-header__input" type="text" placeholder="Пошук товарів">
+                </label>
 
-                <ul>
-                    <li>
-                        <a href="">
+                <a class="main-header__tel" href="tel:+380679294545">
+                    <svg class="main-header__tel-icon" width="50" height="50">
+                        <use href="./images/symbol-defs.svg#tel-header-icon"></use>
+                    </svg>067 929-45-45
+                </a>
+
+                <ul class="main-header__add-list">
+                    <li class="main-header__add-item">
+                        <a class="main-header__add-link" href="">
                             <svg width="50" height="50">
                                 <use href="./images/symbol-defs.svg#favorite-header-icon"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
-                        <a href="">
+                    <li class="main-header__add-item">
+                        <a class="main-header__add-link" href="">
                             <svg width="50" height="50">
                                 <use href="./images/symbol-defs.svg#basket-header-icon"></use>
                             </svg>
@@ -112,55 +121,55 @@
             </div>
         </div>
 
-        <div class="after-header">
-            <div class="container">
-                <ul>
-                    <li>
-                        <a href="">
-                            <svg width="20" height="20">
+        <div class="after-header__border">
+            <div class="container after-header">
+                <ul class="after-header__nav">
+                    <li class="after-header__nav-item">
+                        <a class="after-header__nav-link" href="">
+                            <svg class="after-header__nav-icon" width="20" height="20">
                                 <use href="./images/symbol-defs.svg#star-icon"></use>
                             </svg>
-                            <p>Акції</p>
+                            Акції
                         </a>
                     </li>
-                    <li>
-                        <a href="">
-                            <svg width="20" height="20">
+                    <li class="after-header__nav-item">
+                        <a class="after-header__nav-link" href="">
+                            <svg class="after-header__nav-icon" width="20" height="20">
                                 <use href="./images/symbol-defs.svg#sale-icon"></use>
                             </svg>
-                            <p>Розпродаж</p>
+                            Розпродаж
                         </a>
                     </li>
-                    <li>
-                        <a href="">
-                            <svg width="20" height="20">
+                    <li class="after-header__nav-item">
+                        <a class="after-header__nav-link" href="">
+                            <svg class="after-header__nav-icon" width="20" height="20">
                                 <use href="./images/symbol-defs.svg#credit-icon"></use>
                             </svg>
-                            <p>Купити в кредит</p>
+                            Купити в кредит
                         </a>
                     </li>
                 </ul>
-                <ul>
-                    <li>
-                        <a href="">Дитяча</a>
+                <ul class="after-header__nav">
+                    <li class="after-header__nav-item">
+                        <a class="after-header__nav-link" href="">Дитяча</a>
                     </li>
-                    <li>
-                        <a href="">Кухня</a>
+                    <li class="after-header__nav-item">
+                        <a class="after-header__nav-link" href="">Кухня</a>
                     </li>
-                    <li>
-                        <a href="">Ванна</a>
+                    <li class="after-header__nav-item">
+                        <a class="after-header__nav-link" href="">Ванна</a>
                     </li>
-                    <li>
-                        <a href="">Спальня</a>
+                    <li class="after-header__nav-item">
+                        <a class="after-header__nav-link" href="">Спальня</a>
                     </li>
-                    <li>
-                        <a href="">Передпокій</a>
+                    <li class="after-header__nav-item">
+                        <a class="after-header__nav-link" href="">Передпокій</a>
                     </li>
-                    <li>
-                        <a href="">Вітальня</a>
+                    <li class="after-header__nav-item">
+                        <a class="after-header__nav-link" href="">Вітальня</a>
                     </li>
-                    <li>
-                        <a href="">Офіс</a>
+                    <li class="after-header__nav-item">
+                        <a class="after-header__nav-link" href="">Офіс</a>
                     </li>
                 </ul>
             </div>
@@ -168,351 +177,358 @@
     </header>
 
     <main>
-        <section class="container">
-            <h1 class="visually-hidden">Магазин меблів</h1>
-            <img src="./images/hero.jpg" alt="Hero image" width="1290">
+        <section class="hero">
+            <div class="container">
+                <h1 class="visually-hidden">Магазин меблів</h1>
+                <img src="./images/hero.jpg" alt="Hero image" width="1290">
+            </div>
         </section>
 
-        <section class="container">
-            <h2>Популярні категорії</h2>
-            <ul>
-                <li>
-                    <a href="">
-                        <h3>Ліжка</h3>
-                        <p>54</p>
-                        <img src="./images/category-beds.jpg" alt="Bed photo" width="250">
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <h3>Матраци</h3>
-                        <p>30</p>
-                        <img src="./images/category-mattresses.jpg" alt="Mattresses photo" width="250">
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <h3>М'які меблі</h3>
-                        <p>196</p>
-                        <img src="./images/category-upholstered-furniture.jpg" alt="Upholstered-furniture photo"
-                            width="250">
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <h3>Шафи</h3>
-                        <p>79</p>
-                        <img src="./images/category-cabinets.jpg" alt="Cabinets photo" width="250">
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <h3>Комоди</h3>
-                        <p>54</p>
-                        <img src="./images/category-dressers.jpg" alt="Dressers photo" width="250">
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <h3>Тумби</h3>
-                        <p>64</p>
-                        <img src="./images/category-thumb.jpg" alt="Thumb photo" width="250">
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <h3>Столи</h3>
-                        <p>35</p>
-                        <img src="./images/category-tables.jpg" alt="Table photo" width="250">
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <h3>Стільці</h3>
-                        <p>89</p>
-                        <img src="./images/category-chairs.jpg" alt="Chair photo" width="250">
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <h3>Меблеві стіни</h3>
-                        <p>24</p>
-                        <img src="./images/category-furniture-walls.jpg" alt="Furniture-walls photo" width="250">
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <h3>Кухні</h3>
-                        <p>30</p>
-                        <img src="./images/category-kitchens.jpg" alt="Kitchen photo" width="250">
-                    </a>
-                </li>
-            </ul>
+        <section class="popular-category">
+            <div class="container">
+                <h2>Популярні категорії</h2>
+                <ul>
+                    <li>
+                        <a href="">
+                            <h3>Ліжка</h3>
+                            <p>54</p>
+                            <img src="./images/category-beds.jpg" alt="Bed photo" width="250">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <h3>Матраци</h3>
+                            <p>30</p>
+                            <img src="./images/category-mattresses.jpg" alt="Mattresses photo" width="250">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <h3>М'які меблі</h3>
+                            <p>196</p>
+                            <img src="./images/category-upholstered-furniture.jpg" alt="Upholstered-furniture photo"
+                                width="250">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <h3>Шафи</h3>
+                            <p>79</p>
+                            <img src="./images/category-cabinets.jpg" alt="Cabinets photo" width="250">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <h3>Комоди</h3>
+                            <p>54</p>
+                            <img src="./images/category-dressers.jpg" alt="Dressers photo" width="250">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <h3>Тумби</h3>
+                            <p>64</p>
+                            <img src="./images/category-thumb.jpg" alt="Thumb photo" width="250">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <h3>Столи</h3>
+                            <p>35</p>
+                            <img src="./images/category-tables.jpg" alt="Table photo" width="250">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <h3>Стільці</h3>
+                            <p>89</p>
+                            <img src="./images/category-chairs.jpg" alt="Chair photo" width="250">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <h3>Меблеві стіни</h3>
+                            <p>24</p>
+                            <img src="./images/category-furniture-walls.jpg" alt="Furniture-walls photo" width="250">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <h3>Кухні</h3>
+                            <p>30</p>
+                            <img src="./images/category-kitchens.jpg" alt="Kitchen photo" width="250">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </section>
 
-        <section class="container">
-            <h2>Найпопулярніші товари</h2>
-            <a href="">
-                <p>Дивитись всі</p>
-                <svg width="12" height="12">
-                    <use href="./images/symbol-defs.svg#arrow-icon"></use>
-                </svg>
-            </a>
-            <ul>
-                <li>
-                    <a href="">
-                        <img src="./images/bed-sparta.jpg" alt="Bed Sparta image" width="260">
-                        <p>Розмір: 61 x 184 x 2130 мм</p>
-                        <h3>Ліжко Спарта / Sparta з підйомним механізмом</h3>
-                    </a>
-                    <svg width="24" height="24">
-                        <use href="./images/symbol-defs.svg#in-stock-icon"></use>
+        <section class="popular-product">
+            <div class="container">
+                <h2>Найпопулярніші товари</h2>
+                <a href="">
+                    <p>Дивитись всі</p>
+                    <svg width="12" height="12">
+                        <use href="./images/symbol-defs.svg#arrow-icon"></use>
                     </svg>
-                    <p>В наявності</p>
-                    <p>15 400 грн.</p>
-                    <ul>
-                        <li>
-                            <a href="">
-                                <svg width="50" height="50">
-                                    <use href="./images/symbol-defs.svg#favorite-product-icon"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <svg width="50" height="50">
-                                    <use href="./images/symbol-defs.svg#basket-product-icon"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="./images/bed-argon.jpg" alt="Bed Argon image" width="260">
-                        <p>Розмір: 61 x 184 x 2130 мм</p>
-                        <h3>Ліжко Аргон з підйомним механізмом</h3>
-                    </a>
-                    <svg width="24" height="24">
-                        <use href="./images/symbol-defs.svg#in-stock-icon"></use>
-                    </svg>
-                    <p>В наявності</p>
-                    <p>16 400 грн.</p>
-                    <ul>
-                        <li>
-                            <a href="">
-                                <svg width="50" height="50">
-                                    <use href="./images/symbol-defs.svg#favorite-product-icon"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <svg width="50" height="50">
-                                    <use href="./images/symbol-defs.svg#basket-product-icon"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="./images/bed-prestige.jpg" alt="Bed Prestige image" width="260">
-                        <p>Розмір: 61 x 184 x 2130 мм</p>
-                        <h3>Ліжко Престиж з підйомним механізмом</h3>
-                    </a>
-                    <svg width="24" height="24">
-                        <use href="./images/symbol-defs.svg#in-stock-icon"></use>
-                    </svg>
-                    <p>В наявності</p>
-                    <p>14 969 грн.</p>
-                    <ul>
-                        <li>
-                            <a href="">
-                                <svg width="50" height="50">
-                                    <use href="./images/symbol-defs.svg#favorite-product-icon"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <svg width="50" height="50">
-                                    <use href="./images/symbol-defs.svg#basket-product-icon"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="./images/sofa-tokio.jpg" alt="Sofa Tokio image" width="260">
-                        <p>Розмір: 61 x 184 x 2130 мм</p>
-                        <h3>Диван Токіо-2</h3>
-                    </a>
-                    <svg width="24" height="24">
-                        <use href="./images/symbol-defs.svg#in-stock-icon"></use>
-                    </svg>
-                    <p>В наявності</p>
-                    <p>13 211 грн.</p>
-                    <ul>
-                        <li>
-                            <a href="">
-                                <svg width="50" height="50">
-                                    <use href="./images/symbol-defs.svg#favorite-product-icon"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <svg width="50" height="50">
-                                    <use href="./images/symbol-defs.svg#basket-product-icon"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="./images/martesse-largo-slim.jpg" alt="Martesse-largo-slim image" width="260">
-                        <p>Розмір: 61 x 184 x 2130 мм</p>
-                        <h3>Матрац Largo SLIM / Ларго Слім</h3>
-                    </a>
-                    <svg width="24" height="24">
-                        <use href="./images/symbol-defs.svg#in-stock-icon"></use>
-                    </svg>
-                    <p>В наявності</p>
-                    <p>2 810 грн.</p>
-                    <ul>
-                        <li>
-                            <a href="">
-                                <svg width="50" height="50">
-                                    <use href="./images/symbol-defs.svg#favorite-product-icon"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <svg width="50" height="50">
-                                    <use href="./images/symbol-defs.svg#basket-product-icon"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="./images/matresse-argentum.jpg" alt="Matresse-argentum image" width="260">
-                        <p>Розмір: 61 x 184 x 2130 мм</p>
-                        <h3>Матрац ARGENTUM AMALTEA / Аргентум Амалті</h3>
-                    </a>
-                    <svg width="24" height="24">
-                        <use href="./images/symbol-defs.svg#in-stock-icon"></use>
-                    </svg>
-                    <p>В наявності</p>
-                    <p>5 071 грн.</p>
-                    <ul>
-                        <li>
-                            <a href="">
-                                <svg width="50" height="50">
-                                    <use href="./images/symbol-defs.svg#favorite-product-icon"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <svg width="50" height="50">
-                                    <use href="./images/symbol-defs.svg#basket-product-icon"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="./images/sofa-bravo.jpg" alt="Sofa Bravo image" width="260">
-                        <p>Розмір: 61 x 184 x 2130 мм</p>
-                        <h3>Диван Браво</h3>
-                    </a>
-                    <svg width="24" height="24">
-                        <use href="./images/symbol-defs.svg#in-stock-icon"></use>
-                    </svg>
-                    <p>В наявності</p>
-                    <p>10 008 грн.</p>
-                    <ul>
-                        <li>
-                            <a href="">
-                                <svg width="50" height="50">
-                                    <use href="./images/symbol-defs.svg#favorite-product-icon"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <svg width="50" height="50">
-                                    <use href="./images/symbol-defs.svg#basket-product-icon"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="./images/bed-mk-5.jpg" alt="Bed MK-5 image" width="260">
-                        <p>Розмір: 61 x 184 x 2130 мм
-                        </p>
-                        <h3>Ліжко МК-5</h3>
-                    </a>
-                    <svg width="24" height="24">
-                        <use href="./images/symbol-defs.svg#in-stock-icon"></use>
-                    </svg>
-                    <p>В наявності</p>
-                    <p>8 775 грн.</p>
-                    <ul>
-                        <li>
-                            <a href="">
-                                <svg width="50" height="50">
-                                    <use href="./images/symbol-defs.svg#favorite-product-icon"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <svg width="50" height="50">
-                                    <use href="./images/symbol-defs.svg#basket-product-icon"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+                </a>
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="./images/bed-sparta.jpg" alt="Bed Sparta image" width="260">
+                            <p>Розмір: 61 x 184 x 2130 мм</p>
+                            <h3>Ліжко Спарта / Sparta з підйомним механізмом</h3>
+                        </a>
+                        <svg width="24" height="24">
+                            <use href="./images/symbol-defs.svg#in-stock-icon"></use>
+                        </svg>
+                        <p>В наявності</p>
+                        <p>15 400 грн.</p>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <svg width="50" height="50">
+                                        <use href="./images/symbol-defs.svg#favorite-product-icon"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg width="50" height="50">
+                                        <use href="./images/symbol-defs.svg#basket-product-icon"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/bed-argon.jpg" alt="Bed Argon image" width="260">
+                            <p>Розмір: 61 x 184 x 2130 мм</p>
+                            <h3>Ліжко Аргон з підйомним механізмом</h3>
+                        </a>
+                        <svg width="24" height="24">
+                            <use href="./images/symbol-defs.svg#in-stock-icon"></use>
+                        </svg>
+                        <p>В наявності</p>
+                        <p>16 400 грн.</p>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <svg width="50" height="50">
+                                        <use href="./images/symbol-defs.svg#favorite-product-icon"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg width="50" height="50">
+                                        <use href="./images/symbol-defs.svg#basket-product-icon"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/bed-prestige.jpg" alt="Bed Prestige image" width="260">
+                            <p>Розмір: 61 x 184 x 2130 мм</p>
+                            <h3>Ліжко Престиж з підйомним механізмом</h3>
+                        </a>
+                        <svg width="24" height="24">
+                            <use href="./images/symbol-defs.svg#in-stock-icon"></use>
+                        </svg>
+                        <p>В наявності</p>
+                        <p>14 969 грн.</p>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <svg width="50" height="50">
+                                        <use href="./images/symbol-defs.svg#favorite-product-icon"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg width="50" height="50">
+                                        <use href="./images/symbol-defs.svg#basket-product-icon"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/sofa-tokio.jpg" alt="Sofa Tokio image" width="260">
+                            <p>Розмір: 61 x 184 x 2130 мм</p>
+                            <h3>Диван Токіо-2</h3>
+                        </a>
+                        <svg width="24" height="24">
+                            <use href="./images/symbol-defs.svg#in-stock-icon"></use>
+                        </svg>
+                        <p>В наявності</p>
+                        <p>13 211 грн.</p>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <svg width="50" height="50">
+                                        <use href="./images/symbol-defs.svg#favorite-product-icon"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg width="50" height="50">
+                                        <use href="./images/symbol-defs.svg#basket-product-icon"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/martesse-largo-slim.jpg" alt="Martesse-largo-slim image" width="260">
+                            <p>Розмір: 61 x 184 x 2130 мм</p>
+                            <h3>Матрац Largo SLIM / Ларго Слім</h3>
+                        </a>
+                        <svg width="24" height="24">
+                            <use href="./images/symbol-defs.svg#in-stock-icon"></use>
+                        </svg>
+                        <p>В наявності</p>
+                        <p>2 810 грн.</p>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <svg width="50" height="50">
+                                        <use href="./images/symbol-defs.svg#favorite-product-icon"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg width="50" height="50">
+                                        <use href="./images/symbol-defs.svg#basket-product-icon"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/matresse-argentum.jpg" alt="Matresse-argentum image" width="260">
+                            <p>Розмір: 61 x 184 x 2130 мм</p>
+                            <h3>Матрац ARGENTUM AMALTEA / Аргентум Амалті</h3>
+                        </a>
+                        <svg width="24" height="24">
+                            <use href="./images/symbol-defs.svg#in-stock-icon"></use>
+                        </svg>
+                        <p>В наявності</p>
+                        <p>5 071 грн.</p>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <svg width="50" height="50">
+                                        <use href="./images/symbol-defs.svg#favorite-product-icon"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg width="50" height="50">
+                                        <use href="./images/symbol-defs.svg#basket-product-icon"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/sofa-bravo.jpg" alt="Sofa Bravo image" width="260">
+                            <p>Розмір: 61 x 184 x 2130 мм</p>
+                            <h3>Диван Браво</h3>
+                        </a>
+                        <svg width="24" height="24">
+                            <use href="./images/symbol-defs.svg#in-stock-icon"></use>
+                        </svg>
+                        <p>В наявності</p>
+                        <p>10 008 грн.</p>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <svg width="50" height="50">
+                                        <use href="./images/symbol-defs.svg#favorite-product-icon"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg width="50" height="50">
+                                        <use href="./images/symbol-defs.svg#basket-product-icon"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/bed-mk-5.jpg" alt="Bed MK-5 image" width="260">
+                            <p>Розмір: 61 x 184 x 2130 мм
+                            </p>
+                            <h3>Ліжко МК-5</h3>
+                        </a>
+                        <svg width="24" height="24">
+                            <use href="./images/symbol-defs.svg#in-stock-icon"></use>
+                        </svg>
+                        <p>В наявності</p>
+                        <p>8 775 грн.</p>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <svg width="50" height="50">
+                                        <use href="./images/symbol-defs.svg#favorite-product-icon"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg width="50" height="50">
+                                        <use href="./images/symbol-defs.svg#basket-product-icon"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </section>
 
-        <section class="container">
-            <h2>Акції</h2>
-            <a href="">
-                <p>Дивитись всі</p>
-                <svg width="12" height="12">
-                    <use href="./images/symbol-defs.svg#arrow-icon"></use>
-                </svg>
-            </a>
-            <ul>
-                <li>
-                    <a href="">
-                        <img src="./images/akciya-1.jpg" alt="Akciya-1 image" width="410">
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="./images/akciya-2.jpg" alt="Akciya-2 image" width="410">
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="./images/akciya-3.jpg" alt="Akciya-3 image" width="410">
-                    </a>
-                </li>
-            </ul>
-
+        <section class="promotion">
+            <div class="container">
+                <h2>Акції</h2>
+                <a href="">
+                    <p>Дивитись всі</p>
+                    <svg width="12" height="12">
+                        <use href="./images/symbol-defs.svg#arrow-icon"></use>
+                    </svg>
+                </a>
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="./images/akciya-1.jpg" alt="Akciya-1 image" width="410">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/akciya-2.jpg" alt="Akciya-2 image" width="410">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/akciya-3.jpg" alt="Akciya-3 image" width="410">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <section class="responses">
@@ -636,53 +652,56 @@
             </div>
         </section>
 
-        <section class="container">
-            <h2>Свіжі статті та останні новини</h2>
-            <a href="">
-                <p>Читати блог</p>
-                <svg width="12" height="12">
-                    <use href="./images/symbol-defs.svg#arrow-icon"></use>
-                </svg>
-            </a>
-            <ul>
-                <li>
-                    <article>
-                        <img src="./images/article-1.jpg" alt="Article image" width="410">
-                        <h3>Стільці для вітальні. Як правильно вибрати?</h3>
-                        <a href="">
-                            <p>Детальніше</p>
-                            <svg width="12" height="12">
-                                <use href="./images/symbol-defs.svg#arrow-icon"></use>
-                            </svg>
-                        </a>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <img src="./images/article-2.jpg" alt="Article image" width="410">
-                        <h3>Що краще вибрати для кухні – стільці чи кухонний куточок?</h3>
-                        <a href="">
-                            <p>Детальніше</p>
-                            <svg width="12" height="12">
-                                <use href="./images/symbol-defs.svg#arrow-icon"></use>
-                            </svg>
-                        </a>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <img src="./images/article-3.jpg" alt="Article image" width="410">
-                        <h3>Оформлення вітальні. Які м'які меблі краще вибрати?</h3>
-                        <a href="">
-                            <p>Детальніше</p>
-                            <svg width="12" height="12">
-                                <use href="./images/symbol-defs.svg#arrow-icon"></use>
-                            </svg>
-                        </a>
-                    </article>
-                </li>
-            </ul>
+        <section class="articles">
+            <div class="container">
+                <h2>Свіжі статті та останні новини</h2>
+                <a href="">
+                    <p>Читати блог</p>
+                    <svg width="12" height="12">
+                        <use href="./images/symbol-defs.svg#arrow-icon"></use>
+                    </svg>
+                </a>
+                <ul>
+                    <li>
+                        <article>
+                            <img src="./images/article-1.jpg" alt="Article image" width="410">
+                            <h3>Стільці для вітальні. Як правильно вибрати?</h3>
+                            <a href="">
+                                <p>Детальніше</p>
+                                <svg width="12" height="12">
+                                    <use href="./images/symbol-defs.svg#arrow-icon"></use>
+                                </svg>
+                            </a>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <img src="./images/article-2.jpg" alt="Article image" width="410">
+                            <h3>Що краще вибрати для кухні – стільці чи кухонний куточок?</h3>
+                            <a href="">
+                                <p>Детальніше</p>
+                                <svg width="12" height="12">
+                                    <use href="./images/symbol-defs.svg#arrow-icon"></use>
+                                </svg>
+                            </a>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <img src="./images/article-3.jpg" alt="Article image" width="410">
+                            <h3>Оформлення вітальні. Які м'які меблі краще вибрати?</h3>
+                            <a href="">
+                                <p>Детальніше</p>
+                                <svg width="12" height="12">
+                                    <use href="./images/symbol-defs.svg#arrow-icon"></use>
+                                </svg>
+                            </a>
+                        </article>
+                    </li>
+                </ul>
+            </div>
         </section>
+
         <section class="section-descr">
             <div class="container">
                 <h2>KROVATO - коли потрібні якісні меблі за доступною ціною!</h2>
@@ -740,6 +759,7 @@
             </div>
         </section>
     </main>
+
     <footer class="background-footer">
         <div class="container">
             <a href="./index.html">
