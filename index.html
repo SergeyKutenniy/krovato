@@ -13,155 +13,167 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
-    <header>
+<body class="page">
+    <header class="">
         <div class="pre-header">
-            <ul>
-                <li>
-                    <a href="">Про нас</a>
-                </li>
-                <li>
-                    <a href="">Оплата</a>
-                </li>
-                <li>
-                    <a href="">Доставка та збірка</a>
-                </li>
-                <li>
-                    <a href="">Відгуки</a>
-                </li>
-                <li>
-                    <a href="">Блог</a>
-                </li>
-                <li>
-                    <a href="">Контакти</a>
-                </li>
-                <li>
-                    <a href="">Допомога і консультація:</a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="https://www.whatsapp.com/?lang=uk" target="_blank" rel="noreferrer noopener">
-                        <svg width="30" height="30">
-                            <use href="./images/symbol-defs.svg#whatsapp-icon"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://web.telegram.org/a/" target="_blank" rel="noreferrer noopener">
-                        <svg width="30" height="30">
-                            <use href="./images/symbol-defs.svg#telegram-icon"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.viber.com/ru/" target="_blank" rel="noreferrer noopener">
-                        <svg width="30" height="30">
-                            <use href="./images/symbol-defs.svg#viber-icon"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-            <label for="language">UK</label>
-            <select id="language" name="language">
-                <option value="uk">UK</option>
-                <option value="eng">ENG</option>
-            </select>
+            <div class="container">
+                <ul>
+                    <li>
+                        <a href="">Про нас</a>
+                    </li>
+                    <li>
+                        <a href="">Оплата</a>
+                    </li>
+                    <li>
+                        <a href="">Доставка та збірка</a>
+                    </li>
+                    <li>
+                        <a href="">Відгуки</a>
+                    </li>
+                    <li>
+                        <a href="">Блог</a>
+                    </li>
+                    <li>
+                        <a href="">Контакти</a>
+                    </li>
+                    <li>
+                        <a href="">Допомога і консультація:</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="https://www.whatsapp.com/?lang=uk" target="_blank" rel="noreferrer noopener">
+                            <svg width="30" height="30">
+                                <use href="./images/symbol-defs.svg#whatsapp-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://web.telegram.org/a/" target="_blank" rel="noreferrer noopener">
+                            <svg width="30" height="30">
+                                <use href="./images/symbol-defs.svg#telegram-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.viber.com/ru/" target="_blank" rel="noreferrer noopener">
+                            <svg width="30" height="30">
+                                <use href="./images/symbol-defs.svg#viber-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <label class="language-select" for="language">UK</label>
+                <select id="language" name="language">
+                    <option value="uk">UK</option>
+                    <option value="eng">ENG</option>
+                </select>
+            </div>
         </div>
 
         <div class="main-header">
-            <a href="/index.html">
-                <svg width="250" height="50">
-                    <use href="./images/symbol-defs.svg#logo-header-icon"></use>
+            <div class="container">
+                <a href="/index.html">
+                    <svg width="250" height="50">
+                        <use href="./images/symbol-defs.svg#logo-header-icon"></use>
+                    </svg>
+                </a>
+
+                <button class="btn" type="button">
+                    <svg width="24" height="24">
+                        <use href="./images/symbol-defs.svg#catalog-icon"></use>
+                    </svg>
+                    Каталог
+                </button>
+
+                <input type="text" placeholder="Пошук товарів">
+                <p>Щодня з 9:00 до 18:00</p>
+                <svg width="50" height="50">
+                    <use href="./images/symbol-defs.svg#tel-header-icon"></use>
                 </svg>
-            </a>
+                <a class="main-header__tel" href="tel:+380679294545">067 929-45-45</a>
 
-            <a href="">Каталог</a>
-
-            <input type="text" placeholder="Пошук товарів">
-            <p>Щодня з 9:00 до 18:00</p>
-            <svg width="50" height="50">
-                <use href="./images/symbol-defs.svg#tel-header-icon"></use>
-            </svg>
-            <a href="tel:+380679294545">067 929-45-45</a>
-
-            <ul>
-                <li>
-                    <a href="">
-                        <svg width="50" height="50">
-                            <use href="./images/symbol-defs.svg#favorite-header-icon"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <svg width="50" height="50">
-                            <use href="./images/symbol-defs.svg#basket-header-icon"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
+                <ul>
+                    <li>
+                        <a href="">
+                            <svg width="50" height="50">
+                                <use href="./images/symbol-defs.svg#favorite-header-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg width="50" height="50">
+                                <use href="./images/symbol-defs.svg#basket-header-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
         <div class="after-header">
-            <ul>
-                <li>
-                    <a href="">
-                        <svg width="20" height="20">
-                            <use href="./images/symbol-defs.svg#star-icon"></use>
-                        </svg>
-                        <p>Акції</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <svg width="20" height="20">
-                            <use href="./images/symbol-defs.svg#sale-icon"></use>
-                        </svg>
-                        <p>Розпродаж</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <svg width="20" height="20">
-                            <use href="./images/symbol-defs.svg#credit-icon"></use>
-                        </svg>
-                        <p>Купити в кредит</p>
-                    </a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="">Дитяча</a>
-                </li>
-                <li>
-                    <a href="">Кухня</a>
-                </li>
-                <li>
-                    <a href="">Ванна</a>
-                </li>
-                <li>
-                    <a href="">Спальня</a>
-                </li>
-                <li>
-                    <a href="">Передпокій</a>
-                </li>
-                <li>
-                    <a href="">Вітальня</a>
-                </li>
-                <li>
-                    <a href="">Офіс</a>
-                </li>
-            </ul>
+            <div class="container">
+                <ul>
+                    <li>
+                        <a href="">
+                            <svg width="20" height="20">
+                                <use href="./images/symbol-defs.svg#star-icon"></use>
+                            </svg>
+                            <p>Акції</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg width="20" height="20">
+                                <use href="./images/symbol-defs.svg#sale-icon"></use>
+                            </svg>
+                            <p>Розпродаж</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg width="20" height="20">
+                                <use href="./images/symbol-defs.svg#credit-icon"></use>
+                            </svg>
+                            <p>Купити в кредит</p>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="">Дитяча</a>
+                    </li>
+                    <li>
+                        <a href="">Кухня</a>
+                    </li>
+                    <li>
+                        <a href="">Ванна</a>
+                    </li>
+                    <li>
+                        <a href="">Спальня</a>
+                    </li>
+                    <li>
+                        <a href="">Передпокій</a>
+                    </li>
+                    <li>
+                        <a href="">Вітальня</a>
+                    </li>
+                    <li>
+                        <a href="">Офіс</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
 
     <main>
-        <section>
-            <h1>Магазин меблів</h1>
+        <section class="container">
+            <h1 class="visually-hidden">Магазин меблів</h1>
             <img src="./images/hero.jpg" alt="Hero image" width="1290">
         </section>
-        <section>
+
+        <section class="container">
             <h2>Популярні категорії</h2>
             <ul>
                 <li>
@@ -238,7 +250,7 @@
             </ul>
         </section>
 
-        <section>
+        <section class="container">
             <h2>Найпопулярніші товари</h2>
             <a href="">
                 <p>Дивитись всі</p>
@@ -475,7 +487,7 @@
             </ul>
         </section>
 
-        <section>
+        <section class="container">
             <h2>Акції</h2>
             <a href="">
                 <p>Дивитись всі</p>
@@ -503,126 +515,128 @@
 
         </section>
 
-        <section>
-            <h2>Останні відгуки</h2>
-            <svg width="80" height="80">
-                <use href="./images/symbol-defs.svg#logo-response-icon"></use>
-            </svg>
-            <h3>Магазин меблів для дому «KROVATO»</h3>
-            <ul>
-                <li>
-                    <button type="button">
-                        <svg width="20" height="20">
-                            <use href="./images/symbol-defs.svg#write-response-icon"></use>
-                        </svg>
-                        Написати відгук
-                    </button>
-                </li>
-                <li>
-                    <button type="button">
-                        <svg width="20" height="20">
-                            <use href="./images/symbol-defs.svg#response-icon"></use>
-                        </svg>
-                        Всі відгуки
-                    </button>
-                </li>
-            </ul>
+        <section class="responses">
+            <div class="container">
+                <h2>Останні відгуки</h2>
+                <svg width="80" height="80">
+                    <use href="./images/symbol-defs.svg#logo-response-icon"></use>
+                </svg>
+                <h3>Магазин меблів для дому «KROVATO»</h3>
+                <ul>
+                    <li>
+                        <button type="button">
+                            <svg width="20" height="20">
+                                <use href="./images/symbol-defs.svg#write-response-icon"></use>
+                            </svg>
+                            Написати відгук
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button">
+                            <svg width="20" height="20">
+                                <use href="./images/symbol-defs.svg#response-icon"></use>
+                            </svg>
+                            Всі відгуки
+                        </button>
+                    </li>
+                </ul>
 
-            <ul>
-                <li>
-                    <svg width="50" height="50">
-                        <use href="./images/symbol-defs.svg#avatar-icon"></use>
-                    </svg>
-                    <h4>Іван Стедниця</h4>
-                    <p>25.01.2022</p>
-                    <ul>
-                        <li>
-                            <svg width="24" height="24">
-                                <use href="./images/symbol-defs.svg#star-icon"></use>
-                            </svg>
-                        </li>
-                        <li>
-                            <svg width="24" height="24">
-                                <use href="./images/symbol-defs.svg#star-icon"></use>
-                            </svg>
-                        </li>
-                        <li>
-                            <svg width="24" height="24">
-                                <use href="./images/symbol-defs.svg#star-icon"></use>
-                            </svg>
-                        </li>
-                        <li>
-                            <svg width="24" height="24">
-                                <use href="./images/symbol-defs.svg#star-icon"></use>
-                            </svg>
-                        </li>
-                        <li>
-                            <svg width="24" height="24">
-                                <use href="./images/symbol-defs.svg#star-icon"></use>
-                            </svg>
-                        </li>
-                    </ul>
-                    <p lang="ru">Хочу отметить слаженную и четкую работу всех сотрудников , с кем пришлось
-                        контактировать при
-                        выборе и
-                        покупке дивана
-                        Orange-Line Родео SF17-LX6-PLNGR. Огромную помощь при выборе оказала специалист по продажам
-                        Ульяна ...
-                    </p>
-                    <a href="">
-                        <img src="./images/response-product-icon.png" alt="Tovar icon" width="50">
-                        <h4>Диван Orange-Line Родео SF...</h4>
-                    </a>
-                </li>
-                <li>
-                    <svg width="50" height="50">
-                        <use href="./images/symbol-defs.svg#avatar-icon"></use>
-                    </svg>
-                    <h4>Іван Стедниця</h4>
-                    <p>25.01.2022</p>
-                    <ul>
-                        <li>
-                            <svg width="24" height="24">
-                                <use href="./images/symbol-defs.svg#star-icon"></use>
-                            </svg>
-                        </li>
-                        <li>
-                            <svg width="24" height="24">
-                                <use href="./images/symbol-defs.svg#star-icon"></use>
-                            </svg>
-                        </li>
-                        <li>
-                            <svg width="24" height="24">
-                                <use href="./images/symbol-defs.svg#star-icon"></use>
-                            </svg>
-                        </li>
-                        <li>
-                            <svg width="24" height="24">
-                                <use href="./images/symbol-defs.svg#star-icon"></use>
-                            </svg>
-                        </li>
-                        <li>
-                            <svg width="24" height="24">
-                                <use href="./images/symbol-defs.svg#star-icon"></use>
-                            </svg>
-                        </li>
-                    </ul>
-                    <p lang="ru">Хочу отметить слаженную и четкую работу всех сотрудников , с кем пришлось
-                        контактировать при
-                        выборе и
-                        покупке дивана
-                        Orange-Line Родео SF17-LX6-PLNGR. Огромную помощь при выборе оказала специалист по продажам
-                        Ульяна ...
-                    </p>
-                    <a href="">
-                        <img src="./images/response-product-icon.png" alt="Tovar icon" width="50">
-                        <h4>Диван Orange-Line Родео SF...</h4>
-                    </a>
-                </li>
-            </ul>
+                <ul>
+                    <li>
+                        <svg width="50" height="50">
+                            <use href="./images/symbol-defs.svg#avatar-icon"></use>
+                        </svg>
+                        <h4>Іван Стедниця</h4>
+                        <p>25.01.2022</p>
+                        <ul>
+                            <li>
+                                <svg width="24" height="24">
+                                    <use href="./images/symbol-defs.svg#star-icon"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg width="24" height="24">
+                                    <use href="./images/symbol-defs.svg#star-icon"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg width="24" height="24">
+                                    <use href="./images/symbol-defs.svg#star-icon"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg width="24" height="24">
+                                    <use href="./images/symbol-defs.svg#star-icon"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg width="24" height="24">
+                                    <use href="./images/symbol-defs.svg#star-icon"></use>
+                                </svg>
+                            </li>
+                        </ul>
+                        <p lang="ru">Хочу отметить слаженную и четкую работу всех сотрудников , с кем пришлось
+                            контактировать при
+                            выборе и
+                            покупке дивана
+                            Orange-Line Родео SF17-LX6-PLNGR. Огромную помощь при выборе оказала специалист по продажам
+                            Ульяна ...
+                        </p>
+                        <a href="">
+                            <img src="./images/response-product-icon.png" alt="Tovar icon" width="50">
+                            <h4>Диван Orange-Line Родео SF...</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <svg width="50" height="50">
+                            <use href="./images/symbol-defs.svg#avatar-icon"></use>
+                        </svg>
+                        <h4>Іван Стедниця</h4>
+                        <p>25.01.2022</p>
+                        <ul>
+                            <li>
+                                <svg width="24" height="24">
+                                    <use href="./images/symbol-defs.svg#star-icon"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg width="24" height="24">
+                                    <use href="./images/symbol-defs.svg#star-icon"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg width="24" height="24">
+                                    <use href="./images/symbol-defs.svg#star-icon"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg width="24" height="24">
+                                    <use href="./images/symbol-defs.svg#star-icon"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg width="24" height="24">
+                                    <use href="./images/symbol-defs.svg#star-icon"></use>
+                                </svg>
+                            </li>
+                        </ul>
+                        <p lang="ru">Хочу отметить слаженную и четкую работу всех сотрудников , с кем пришлось
+                            контактировать при
+                            выборе и
+                            покупке дивана
+                            Orange-Line Родео SF17-LX6-PLNGR. Огромную помощь при выборе оказала специалист по продажам
+                            Ульяна ...
+                        </p>
+                        <a href="">
+                            <img src="./images/response-product-icon.png" alt="Tovar icon" width="50">
+                            <h4>Диван Orange-Line Родео SF...</h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </section>
 
-        <section>
+        <section class="container">
             <h2>Свіжі статті та останні новини</h2>
             <a href="">
                 <p>Читати блог</p>
@@ -669,224 +683,233 @@
                 </li>
             </ul>
         </section>
-        <section>
-            <h2>KROVATO - коли потрібні якісні меблі за доступною ціною!</h2>
-            <p>Якщо в пошуковий рядок браузера ввести запит: «Куплю ліжко, шафу, диван», система видасть сотні
-                продавців, що
-                спеціалізуються з продажу цього товару. Але далеко не всі магазини та сайти в інтернеті можуть
-                запропонувати такий самий
-                різноманітний асортимент, як наша компанія. Та й з нашими цінами конкурувати можуть мало хто. Адже товар
-                ми отримуємо
-                безпосередньо від виробників, не переплачуючи за послуги посередників. До того ж, продажі ми ведемо як
-                онлайн, так і в
-                салоні, при цьому ціна на асортимент онлайн та офлайн - однакова.
-                Ми співпрацюємо тільки з найкращими вітчизняними та зарубіжними фабриками та компаніями, які отримали
-                визнання покупців
-                та експертів меблевої справи. Для нас важливо, щоб товар, який ми продаємо, відповідав міжнародним
-                стандартам якості,
-                був із сертифікованих матеріалів – довговічних, красивих та екологічно чистих. Ми з особливою
-                ретельністю відбираємо
-                пропозиції для магазину, тому можемо поручитися за їхню якість і впевнено рекомендувати клієнтам. У нас
-                ви легко
-                знайдете меблеві серії в класичному та модерному стилі, лінійки для оформлення житла в дусі романтики
-                або
-                скандинавського лаконізму.</p>
-            <ul>
-                <li>
-                    <svg width="80" height="80">
-                        <use href="./images/symbol-defs.svg#delivery-icon"></use>
-                    </svg>
-                    <h3>Безкоштовна доставка</h3>
-                </li>
-                <li>
-                    <svg width="80" height="80">
-                        <use href="./images/symbol-defs.svg#assembly-icon"></use>
-                    </svg>
-                    <h3>Безкоштовна збірка</h3>
-                </li>
-                <li>
-                    <svg width="80" height="80">
-                        <use href="./images/symbol-defs.svg#service-icon"></use>
-                    </svg>
-                    <h3>Післягарантійне обслуговування</h3>
-                </li>
-                <li>
-                    <svg width="80" height="80">
-                        <use href="./images/symbol-defs.svg#discount-icon"></use>
-                    </svg>
-                    <h3>Знижки клієнтам</h3>
-                </li>
-            </ul>
+        <section class="section-descr">
+            <div class="container">
+                <h2>KROVATO - коли потрібні якісні меблі за доступною ціною!</h2>
+                <p>Якщо в пошуковий рядок браузера ввести запит: «Куплю ліжко, шафу, диван», система видасть сотні
+                    продавців, що
+                    спеціалізуються з продажу цього товару. Але далеко не всі магазини та сайти в інтернеті можуть
+                    запропонувати такий самий
+                    різноманітний асортимент, як наша компанія. Та й з нашими цінами конкурувати можуть мало хто. Адже
+                    товар
+                    ми отримуємо
+                    безпосередньо від виробників, не переплачуючи за послуги посередників. До того ж, продажі ми ведемо
+                    як
+                    онлайн, так і в
+                    салоні, при цьому ціна на асортимент онлайн та офлайн - однакова.
+                    Ми співпрацюємо тільки з найкращими вітчизняними та зарубіжними фабриками та компаніями, які
+                    отримали
+                    визнання покупців
+                    та експертів меблевої справи. Для нас важливо, щоб товар, який ми продаємо, відповідав міжнародним
+                    стандартам якості,
+                    був із сертифікованих матеріалів – довговічних, красивих та екологічно чистих. Ми з особливою
+                    ретельністю відбираємо
+                    пропозиції для магазину, тому можемо поручитися за їхню якість і впевнено рекомендувати клієнтам. У
+                    нас
+                    ви легко
+                    знайдете меблеві серії в класичному та модерному стилі, лінійки для оформлення житла в дусі
+                    романтики
+                    або
+                    скандинавського лаконізму.</p>
+                <ul>
+                    <li>
+                        <svg width="80" height="80">
+                            <use href="./images/symbol-defs.svg#delivery-icon"></use>
+                        </svg>
+                        <h3>Безкоштовна доставка</h3>
+                    </li>
+                    <li>
+                        <svg width="80" height="80">
+                            <use href="./images/symbol-defs.svg#assembly-icon"></use>
+                        </svg>
+                        <h3>Безкоштовна збірка</h3>
+                    </li>
+                    <li>
+                        <svg width="80" height="80">
+                            <use href="./images/symbol-defs.svg#service-icon"></use>
+                        </svg>
+                        <h3>Післягарантійне обслуговування</h3>
+                    </li>
+                    <li>
+                        <svg width="80" height="80">
+                            <use href="./images/symbol-defs.svg#discount-icon"></use>
+                        </svg>
+                        <h3>Знижки клієнтам</h3>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
-    <footer>
-        <a href="./index.html">
-            <svg width="250" height="50">
-                <use href="./images/symbol-defs.svg#logo-footer-icon"></use>
+    <footer class="background-footer">
+        <div class="container">
+            <a href="./index.html">
+                <svg width="250" height="50">
+                    <use href="./images/symbol-defs.svg#logo-footer-icon"></use>
+                </svg>
+            </a>
+            <p>Приєднуйтесь:</p>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">
+                        <svg width="40" height="40">
+                            <use href="./images/symbol-defs.svg#facebook-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener">
+                        <svg width="40" height="40">
+                            <use href="./images/symbol-defs.svg#instagram-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
+            <p>Допомога і консультація:</p>
+            <ul>
+                <li>
+                    <a href="https://www.whatsapp.com/?lang=uk" target="_blank" rel="noreferrer noopener">
+                        <svg width="40" height="40">
+                            <use href="./images/symbol-defs.svg#whatsapp-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://web.telegram.org/a/" target="_blank" rel="noreferrer noopener">
+                        <svg width="40" height="40">
+                            <use href="./images/symbol-defs.svg#telegram-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.viber.com/ru/" target="_blank" rel="noreferrer noopener">
+                        <svg width="40" height="40">
+                            <use href="./images/symbol-defs.svg#viber-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <a href="">
+                        <svg width="70" height="30">
+                            <use href="./images/symbol-defs.svg#visa-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg width="89" height="30">
+                            <use href="./images/symbol-defs.svg#mastercard-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
+            <p>Інформація</p>
+            <ul>
+                <li>
+                    <a href="">Про нас</a>
+                </li>
+                <li>
+                    <a href="">Оплата</a>
+                </li>
+                <li>
+                    <a href="">Доставка та збірка</a>
+                </li>
+                <li>
+                    <a href="">Відгуки</a>
+                </li>
+                <li>
+                    <a href="">Блог</a>
+                </li>
+                <li>
+                    <a href="">Контакти</a>
+                </li>
+                <li>
+                    <a href="">Мапа сайту</a>
+                </li>
+            </ul>
+
+            <p>Категорії</p>
+            <ul>
+                <li>
+                    <a href="">Ліжка</a>
+                </li>
+                <li>
+                    <a href="">Матраци</a>
+                </li>
+                <li>
+                    <a href="">М’які меблі</a>
+                </li>
+                <li>
+                    <a href="">Шафи</a>
+                </li>
+                <li>
+                    <a href="">Комоди</a>
+                </li>
+                <li>
+                    <a href="">Тумби</a>
+                </li>
+                <li>
+                    <a href="">Стільці</a>
+                </li>
+                <li>
+                    <a href="">Меблеві стіни</a>
+                </li>
+                <li>
+                    <a href="">Кухні</a>
+                </li>
+            </ul>
+
+            <p>Клієнтам</p>
+            <ul>
+                <li>
+                    <a href="">Акції</a>
+                </li>
+                <li>
+                    <a href="">Розпродаж</a>
+                </li>
+                <li>
+                    <a href="">Купити в кредит</a>
+                </li>
+                <li>
+                    <a href="">Обмін і повернення товару</a>
+                </li>
+                <li>
+                    <a href="">Часто задавані питання</a>
+                </li>
+                <li>
+                    <a href="">Умови покупки</a>
+                </li>
+                <li>
+                    <a href="">Політика конфіденційності</a>
+                </li>
+            </ul>
+
+            <svg width="50" height="50">
+                <use href="./images/symbol-defs.svg#tel-footer-icon"></use>
             </svg>
-        </a>
-        <p>Приєднуйтесь:</p>
-        <ul>
-            <li>
-                <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">
-                    <svg width="40" height="40">
-                        <use href="./images/symbol-defs.svg#facebook-icon"></use>
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener">
-                    <svg width="40" height="40">
-                        <use href="./images/symbol-defs.svg#instagram-icon"></use>
-                    </svg>
-                </a>
-            </li>
-        </ul>
+            <ul>
+                <li><a href="tel:+380679294545">+38 067 929-45-45</a></li>
+                <li><a href="tel:+380501334545">+38 050 133-45-45</a></li>
+                <li><a href="tel:+380931707545">+38 093 170-75-45</a></li>
+            </ul>
+            <button type="button">Передзвоніть мені</button>
+            <svg width="50" height="50">
+                <use href="./images/symbol-defs.svg#adress-icon"></use>
+            </svg>
+            <address>
+                м. Київ, провулок Ізяславський 52, поверх 2
+            </address>
+            <svg width="50" height="50">
+                <use href="./images/symbol-defs.svg#calendar-icon"></use>
+            </svg>
+            <p>Працюємо щодня з 9:00 до 18:00</p>
 
-        <p>Допомога і консультація:</p>
-        <ul>
-            <li>
-                <a href="https://www.whatsapp.com/?lang=uk" target="_blank" rel="noreferrer noopener">
-                    <svg width="40" height="40">
-                        <use href="./images/symbol-defs.svg#whatsapp-icon"></use>
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a href="https://web.telegram.org/a/" target="_blank" rel="noreferrer noopener">
-                    <svg width="40" height="40">
-                        <use href="./images/symbol-defs.svg#telegram-icon"></use>
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.viber.com/ru/" target="_blank" rel="noreferrer noopener">
-                    <svg width="40" height="40">
-                        <use href="./images/symbol-defs.svg#viber-icon"></use>
-                    </svg>
-                </a>
-            </li>
-        </ul>
-
-        <ul>
-            <li>
-                <a href="">
-                    <svg width="70" height="30">
-                        <use href="./images/symbol-defs.svg#visa-icon"></use>
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <svg width="89" height="30">
-                        <use href="./images/symbol-defs.svg#mastercard-icon"></use>
-                    </svg>
-                </a>
-            </li>
-        </ul>
-
-        <p>Інформація</p>
-        <ul>
-            <li>
-                <a href="">Про нас</a>
-            </li>
-            <li>
-                <a href="">Оплата</a>
-            </li>
-            <li>
-                <a href="">Доставка та збірка</a>
-            </li>
-            <li>
-                <a href="">Відгуки</a>
-            </li>
-            <li>
-                <a href="">Блог</a>
-            </li>
-            <li>
-                <a href="">Контакти</a>
-            </li>
-            <li>
-                <a href="">Мапа сайту</a>
-            </li>
-        </ul>
-
-        <p>Категорії</p>
-        <ul>
-            <li>
-                <a href="">Ліжка</a>
-            </li>
-            <li>
-                <a href="">Матраци</a>
-            </li>
-            <li>
-                <a href="">М’які меблі</a>
-            </li>
-            <li>
-                <a href="">Шафи</a>
-            </li>
-            <li>
-                <a href="">Комоди</a>
-            </li>
-            <li>
-                <a href="">Тумби</a>
-            </li>
-            <li>
-                <a href="">Стільці</a>
-            </li>
-            <li>
-                <a href="">Меблеві стіни</a>
-            </li>
-            <li>
-                <a href="">Кухні</a>
-            </li>
-        </ul>
-
-        <p>Клієнтам</p>
-        <ul>
-            <li>
-                <a href="">Акції</a>
-            </li>
-            <li>
-                <a href="">Розпродаж</a>
-            </li>
-            <li>
-                <a href="">Купити в кредит</a>
-            </li>
-            <li>
-                <a href="">Обмін і повернення товару</a>
-            </li>
-            <li>
-                <a href="">Часто задавані питання</a>
-            </li>
-            <li>
-                <a href="">Умови покупки</a>
-            </li>
-            <li>
-                <a href="">Політика конфіденційності</a>
-            </li>
-        </ul>
-
-        <svg width="50" height="50">
-            <use href="./images/symbol-defs.svg#tel-footer-icon"></use>
-        </svg>
-        <ul>
-            <li><a href="tel:+380679294545">+38 067 929-45-45</a></li>
-            <li><a href="tel:+380501334545">+38 050 133-45-45</a></li>
-            <li><a href="tel:+380931707545">+38 093 170-75-45</a></li>
-        </ul>
-        <button type="button">Передзвоніть мені</button>
-        <svg width="50" height="50">
-            <use href="./images/symbol-defs.svg#adress-icon"></use>
-        </svg>
-        <address>
-            м. Київ, провулок Ізяславський 52, поверх 2
-        </address>
-        <svg width="50" height="50">
-            <use href="./images/symbol-defs.svg#calendar-icon"></use>
-        </svg>
-        <p>Працюємо щодня з 9:00 до 18:00</p>
-
-        <p>&copy; KROVATO - Технології сну - 2022. Всі права захищені.</p>
+            <p>&copy; KROVATO - Технології сну - 2022. Всі права захищені.</p>
+        </div>
     </footer>
 </body>
 

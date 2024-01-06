@@ -1,1 +1,107 @@
+:root {
+  --dark-color: #2b2929;
+  --grey-color: #535353;
+  --grey-light-color: #b1b1b1;
+  --light-color: #f8f8f8;
+  --accent-color: #ffbc57;
+}
 
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page {
+  color: var(--dark-color);
+  font-family: 'Proxima Nova', sans-serif;
+  background-color: #ffffff;
+}
+
+header {
+  color: var(--grey-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+@font-face {
+  font-family: Proxima Nova;
+  src: url(../font/proximanova_light.otf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: Proxima Nova;
+  src: url(../font/proximanova_regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Proxima Nova;
+  src: url(../font/proximanova_bold.otf);
+  font-weight: 700;
+}
+
+.container {
+  width: 1320px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.language-select {
+  font-weight: 700;
+}
+
+.btn {
+  color: #ffffff;
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 8px;
+}
+
+.pre-header {
+  background-color: var(--light-color);
+}
+
+.responses {
+  background-color: #e3e2e2;
+}
+
+.section-descr {
+  background-color: #fff;
+}
+
+.background-footer {
+  background-color: var(--dark-color);
+  color: #ffffff;
+}
