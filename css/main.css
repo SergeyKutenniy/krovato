@@ -48,6 +48,12 @@ a {
   font-weight: 700;
 }
 
+@font-face {
+  font-family: Helmord;
+  src: url(/sass/font/Helmord.ttf);
+  font-weight: 700;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -64,7 +70,7 @@ a {
 
 .page {
   color: #2b2929;
-  font-family: 'Proxima Nova', sans-serif;
+  font-family: 'Helmord', sans-serif;
   background-color: #ffffff;
 }
 
