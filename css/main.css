@@ -50,7 +50,7 @@ a {
 
 @font-face {
   font-family: Helmord;
-  src: url("../../sass/font/Helmord.ttf");
+  src: url(../../sass/font/Helmord.ttf);
   font-weight: 700;
 }
 
