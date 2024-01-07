@@ -32,25 +32,19 @@ a {
 
 @font-face {
   font-family: Proxima Nova;
-  src: url(./proximanova_light.otf);
+  src: url(../sass/font/proximanova_light.otf);
   font-weight: 300;
 }
 
 @font-face {
   font-family: Proxima Nova;
-  src: url(./proximanova_regular.ttf);
+  src: url(../sass/font/proximanova_regular.ttf);
   font-weight: 400;
 }
 
 @font-face {
   font-family: Proxima Nova;
-  src: url(./proximanova_bold.otf);
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: Helmord;
-  src: url("../sass/font/helmord-new.ttf");
+  src: url(../sass/font/proximanova_bold.otf);
   font-weight: 700;
 }
 
@@ -70,7 +64,7 @@ a {
 
 .page {
   color: #2b2929;
-  font-family: 'Helmord', sans-serif;
+  font-family: 'Proxima Nova', sans-serif;
   background-color: #ffffff;
 }
 
