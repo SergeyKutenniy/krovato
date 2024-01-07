@@ -1,0 +1,76 @@
+.language-select {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 1.26;
+}
+
+.pre-header__common {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pre-header {
+  color: $grey-color;
+  background-color: $light-color;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+.pre-header__menu {
+  display: flex;
+}
+.pre-header__menu-link {
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pre-header__menu-link:hover,
+.pre-header__menu-link:focus {
+  color: $accent-color;
+}
+
+.pre-header__menu-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.pre-header__social {
+  display: flex;
+  align-items: center;
+}
+
+.pre-header__help-link {
+  margin-right: 20px;
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pre-header__help-link:hover,
+.pre-header__help-link:focus {
+  color: $accent-color;
+}
+
+.pre-header__messengers {
+  display: flex;
+  margin-right: 30px;
+}
+
+.pre-header__messengers-link {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.pre-header__messengers-link {
+  border-radius: 50%;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pre-header__messengers-link:hover,
+.pre-header__messengers-link:focus {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.pre-header__messengers-item:not(:last-child) {
+  margin-right: 10px;
+}
