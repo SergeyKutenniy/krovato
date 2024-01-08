@@ -1,8 +1,11 @@
 .main-header {
-  display: flex;
-  align-items: center;
   padding-top: 25px;
   padding-bottom: 25px;
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .main-header__logo {

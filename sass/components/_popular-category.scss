@@ -1,3 +1,38 @@
 .popular-category {
   @extend %bg-color;
+  padding-bottom: 70px;
+}
+
+.popular-category__title {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+
+.popular-category__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.popular-category__item:not(:nth-child(5n)) {
+  margin-right: 10px;
+}
+
+.popular-category__item:nth-child(-n + 5) {
+  margin-bottom: 24px;
+}
+
+.card-title__quantity {
+  display: inline-block;
+  margin-left: auto;
+}
+
+.popular-category__card-title {
+  font-size: 20px;
+  line-height: 1.4;
+
+  span {
+    color: $grey-light-color;
+  }
 }

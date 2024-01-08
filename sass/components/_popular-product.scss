@@ -1,3 +1,122 @@
 .popular-product {
   @extend %bg-color;
+  padding-bottom: 80px;
+}
+
+.popular-product__heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.popular-product__section-title {
+  font-size: 40px;
+  margin-right: 30px;
+}
+
+.popular-product__link {
+  font-size: 19px;
+  line-height: 1.26;
+  color: $accent-color;
+}
+
+.popular-product__icon {
+  margin-left: 10px;
+}
+
+.popular-product__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.popular-product__item {
+  width: calc((100% - 90px) / 4);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #e3e2e2;
+  background: #fff;
+  box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.06);
+}
+
+.popular-product__item:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+
+.popular-product__item:nth-child(-n + 4) {
+  margin-bottom: 30px;
+}
+
+.popular-product__photo {
+  margin-bottom: 20px;
+}
+
+.popular-product__pre-title {
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.69;
+  color: $grey-color;
+}
+
+.popular-product__title {
+  font-size: 19px;
+  line-height: 1.26;
+  margin-bottom: 10px;
+  min-height: 52px;
+}
+
+.popular-product__in-stock {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  svg {
+    margin-right: 5px;
+  }
+}
+
+.popular-product__price {
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.popular-product__add {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popular-product__add-list {
+  display: flex;
+  align-items: center;
+}
+
+.popular-product__add-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.popular-product__add-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $light-color;
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+
+    .popular-product__add-icon {
+      fill: #fff;
+    }
+  }
+}
+
+.popular-product__add-icon {
+  transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: $grey-light-color;
 }
