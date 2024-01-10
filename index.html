@@ -537,25 +537,27 @@
 
         <section class="promotion">
             <div class="container">
-                <h2>Акції</h2>
-                <a href="">
-                    <p>Дивитись всі</p>
-                    <svg width="12" height="12">
-                        <use href="./images/symbol-defs.svg#arrow-icon"></use>
-                    </svg>
-                </a>
-                <ul>
-                    <li>
+                <div class="promotion__heading">
+                    <h2 class="promotion__section-title">Акції</h2>
+                    <a class="promotion__link" href="">
+                        Дивитись всі
+                        <svg class="promotion__icon" width="12" height="12">
+                            <use href="./images/symbol-defs.svg#arrow-icon"></use>
+                        </svg>
+                    </a>
+                </div>
+                <ul class="promotion__image">
+                    <li class="promotion__item">
                         <a href="">
                             <img src="./images/akciya-1.jpg" alt="Akciya-1 image" width="410">
                         </a>
                     </li>
-                    <li>
+                    <li class="promotion__item">
                         <a href="">
                             <img src="./images/akciya-2.jpg" alt="Akciya-2 image" width="410">
                         </a>
                     </li>
-                    <li>
+                    <li class="promotion__item">
                         <a href="">
                             <img src="./images/akciya-3.jpg" alt="Akciya-3 image" width="410">
                         </a>
@@ -565,118 +567,156 @@
         </section>
 
         <section class="responses">
-            <div class="container">
-                <h2>Останні відгуки</h2>
-                <svg width="80" height="80">
-                    <use href="./images/symbol-defs.svg#logo-response-icon"></use>
-                </svg>
-                <h3>Магазин меблів для дому «KROVATO»</h3>
-                <ul>
-                    <li>
-                        <button type="button">
-                            <svg width="20" height="20">
-                                <use href="./images/symbol-defs.svg#write-response-icon"></use>
-                            </svg>
-                            Написати відгук
-                        </button>
-                    </li>
-                    <li>
-                        <button type="button">
-                            <svg width="20" height="20">
-                                <use href="./images/symbol-defs.svg#response-icon"></use>
-                            </svg>
-                            Всі відгуки
-                        </button>
-                    </li>
-                </ul>
-
-                <ul>
-                    <li>
-                        <svg width="50" height="50">
-                            <use href="./images/symbol-defs.svg#avatar-icon"></use>
+            <div class="container responses__main">
+                <div class="responses__heading">
+                    <h2 class="responses__section-title">Останні відгуки</h2>
+                    <div class="responses__after-title">
+                        <svg width="80" height="80">
+                            <use href="./images/symbol-defs.svg#logo-response-icon"></use>
                         </svg>
-                        <h4>Іван Стедниця</h4>
-                        <p>25.01.2022</p>
-                        <ul>
-                            <li>
-                                <svg width="24" height="24">
-                                    <use href="./images/symbol-defs.svg#star-icon"></use>
+                        <h3>Магазин меблів для дому <br>«KROVATO»</h3>
+                    </div>
+                    <ul class="responses__btn-list">
+                        <li class="responses__btn-item">
+                            <button class="responses__btn" type="button">
+                                <svg width="20" height="20">
+                                    <use href="./images/symbol-defs.svg#write-response-icon"></use>
                                 </svg>
-                            </li>
-                            <li>
-                                <svg width="24" height="24">
-                                    <use href="./images/symbol-defs.svg#star-icon"></use>
+                                Написати відгук
+                            </button>
+                        </li>
+                        <li class="responses__btn-item">
+                            <button class="responses__btn" type="button">
+                                <svg width="20" height="20">
+                                    <use href="./images/symbol-defs.svg#response-icon"></use>
                                 </svg>
-                            </li>
-                            <li>
-                                <svg width="24" height="24">
-                                    <use href="./images/symbol-defs.svg#star-icon"></use>
-                                </svg>
-                            </li>
-                            <li>
-                                <svg width="24" height="24">
-                                    <use href="./images/symbol-defs.svg#star-icon"></use>
-                                </svg>
-                            </li>
-                            <li>
-                                <svg width="24" height="24">
-                                    <use href="./images/symbol-defs.svg#star-icon"></use>
-                                </svg>
-                            </li>
-                        </ul>
-                        <p lang="ru">Хочу отметить слаженную и четкую работу всех сотрудников , с кем пришлось
+                                Всі відгуки
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="responses__list">
+                    <li class="responses__item">
+                        <div class="responses__rating">
+                            <svg width="50" height="50">
+                                <use href="./images/symbol-defs.svg#avatar-icon"></use>
+                            </svg>
+
+                            <div class="responses__title">
+                                <div class="responses__human">
+                                    <h4>Іван Стедниця</h4>
+                                    <p>25.01.2022</p>
+                                </div>
+                                <ul class="responses__star-icon">
+                                    <li>
+                                        <svg width="24" height="24">
+                                            <use href="./images/symbol-defs.svg#star-icon"></use>
+                                        </svg>
+                                    </li>
+                                    <li>
+                                        <svg width="24" height="24">
+                                            <use href="./images/symbol-defs.svg#star-icon"></use>
+                                        </svg>
+                                    </li>
+                                    <li>
+                                        <svg width="24" height="24">
+                                            <use href="./images/symbol-defs.svg#star-icon"></use>
+                                        </svg>
+                                    </li>
+                                    <li>
+                                        <svg width="24" height="24">
+                                            <use href="./images/symbol-defs.svg#star-icon"></use>
+                                        </svg>
+                                    </li>
+                                    <li>
+                                        <svg width="24" height="24">
+                                            <use href="./images/symbol-defs.svg#star-icon"></use>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <p class="responses__descr" lang="ru">Хочу отметить слаженную и четкую работу всех сотрудников ,
+                            с кем пришлось
                             контактировать при
                             выборе и
                             покупке дивана
                             Orange-Line Родео SF17-LX6-PLNGR. Огромную помощь при выборе оказала специалист по продажам
-                            Ульяна ...
+                            Ульяна.
+                            Хочу отметить слаженную и четкую работу всех сотрудников ,
+                            с кем пришлось
+                            контактировать при
+                            выборе и
+                            покупке дивана
+                            Orange-Line Родео SF17-LX6-PLNGR. Огромную помощь при выборе оказала специалист по продажам
+                            Ульяна.
+
                         </p>
-                        <a href="">
+                        <a class="responses__product-link" href="">
                             <img src="./images/response-product-icon.png" alt="Tovar icon" width="50">
                             <h4>Диван Orange-Line Родео SF...</h4>
                         </a>
                     </li>
-                    <li>
-                        <svg width="50" height="50">
-                            <use href="./images/symbol-defs.svg#avatar-icon"></use>
-                        </svg>
-                        <h4>Іван Стедниця</h4>
-                        <p>25.01.2022</p>
-                        <ul>
-                            <li>
-                                <svg width="24" height="24">
-                                    <use href="./images/symbol-defs.svg#star-icon"></use>
-                                </svg>
-                            </li>
-                            <li>
-                                <svg width="24" height="24">
-                                    <use href="./images/symbol-defs.svg#star-icon"></use>
-                                </svg>
-                            </li>
-                            <li>
-                                <svg width="24" height="24">
-                                    <use href="./images/symbol-defs.svg#star-icon"></use>
-                                </svg>
-                            </li>
-                            <li>
-                                <svg width="24" height="24">
-                                    <use href="./images/symbol-defs.svg#star-icon"></use>
-                                </svg>
-                            </li>
-                            <li>
-                                <svg width="24" height="24">
-                                    <use href="./images/symbol-defs.svg#star-icon"></use>
-                                </svg>
-                            </li>
-                        </ul>
-                        <p lang="ru">Хочу отметить слаженную и четкую работу всех сотрудников , с кем пришлось
+                    <li class="responses__item">
+                        <div class="responses__rating">
+                            <svg width="50" height="50">
+                                <use href="./images/symbol-defs.svg#avatar-icon"></use>
+                            </svg>
+
+                            <div class="responses__title">
+                                <div class="responses__human">
+                                    <h4>Іван Стедниця</h4>
+                                    <p>25.01.2022</p>
+                                </div>
+                                <ul class="responses__star-icon">
+                                    <li>
+                                        <svg width="24" height="24">
+                                            <use href="./images/symbol-defs.svg#star-icon"></use>
+                                        </svg>
+                                    </li>
+                                    <li>
+                                        <svg width="24" height="24">
+                                            <use href="./images/symbol-defs.svg#star-icon"></use>
+                                        </svg>
+                                    </li>
+                                    <li>
+                                        <svg width="24" height="24">
+                                            <use href="./images/symbol-defs.svg#star-icon"></use>
+                                        </svg>
+                                    </li>
+                                    <li>
+                                        <svg width="24" height="24">
+                                            <use href="./images/symbol-defs.svg#star-icon"></use>
+                                        </svg>
+                                    </li>
+                                    <li>
+                                        <svg width="24" height="24">
+                                            <use href="./images/symbol-defs.svg#star-icon"></use>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <p class="responses__descr" lang="ru">Хочу отметить слаженную и четкую работу всех сотрудников ,
+                            с кем пришлось
                             контактировать при
                             выборе и
                             покупке дивана
                             Orange-Line Родео SF17-LX6-PLNGR. Огромную помощь при выборе оказала специалист по продажам
-                            Ульяна ...
+                            Ульяна.
+                            Хочу отметить слаженную и четкую работу всех сотрудников ,
+                            с кем пришлось
+                            контактировать при
+                            выборе и
+                            покупке дивана
+                            Orange-Line Родео SF17-LX6-PLNGR. Огромную помощь при выборе оказала специалист по продажам
+                            Ульяна.
+
                         </p>
-                        <a href="">
+                        <a class="responses__product-link" href="">
                             <img src="./images/response-product-icon.png" alt="Tovar icon" width="50">
                             <h4>Диван Orange-Line Родео SF...</h4>
                         </a>

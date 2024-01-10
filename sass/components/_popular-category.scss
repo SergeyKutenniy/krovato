@@ -15,6 +15,17 @@
   flex-wrap: wrap;
 }
 
+.popular-category__item {
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.3);
+  }
+}
+
 .popular-category__item:not(:nth-child(5n)) {
   margin-right: 10px;
 }

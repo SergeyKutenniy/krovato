@@ -3,3 +3,131 @@
   padding-top: 70px;
   padding-bottom: 109px;
 }
+
+.responses__main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.responses__section-title {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.responses__after-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 72px;
+
+  svg {
+    margin-right: 30px;
+  }
+}
+
+.responses__btn-list {
+  display: flex;
+  align-items: center;
+}
+
+.responses__btn {
+  display: flex;
+  align-items: center;
+  color: $grey-color;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.26;
+  padding: 8px 13px;
+  border: none;
+  border-radius: 8px;
+  background-color: transparent;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  svg {
+    fill: $grey-color;
+    margin-right: 15px;
+    transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: $accent-color;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    svg {
+      fill: #ffffff;
+    }
+  }
+}
+
+.responses__btn-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.responses__list {
+  display: flex;
+  align-items: center;
+}
+
+.responses__item {
+  width: 415px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #e3e2e2;
+  box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.06);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.responses__star-icon {
+  display: flex;
+  align-items: center;
+}
+
+.responses__title {
+  margin-left: 20px;
+  flex-grow: 1;
+}
+
+.responses__human {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.responses__rating {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.responses__descr {
+  font-size: 16px;
+  line-height: 1.88;
+  height: 150px;
+  overflow: auto;
+  padding-right: 10px;
+  margin-bottom: 30px;
+}
+
+.responses__product-link {
+  display: flex;
+  align-items: center;
+
+  img {
+    margin-right: 10px;
+  }
+
+  h4 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+}

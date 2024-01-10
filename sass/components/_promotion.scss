@@ -2,3 +2,44 @@
   @extend %bg-color;
   padding-bottom: 70px;
 }
+
+.promotion__heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.promotion__section-title {
+  font-size: 40px;
+  margin-right: 30px;
+}
+
+.promotion__link {
+  font-size: 19px;
+  line-height: 1.26;
+  color: $accent-color;
+}
+
+.promotion__icon {
+  margin-left: 10px;
+}
+
+.promotion__image {
+  display: flex;
+  align-items: center;
+}
+
+.promotion__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.promotion__item {
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.3);
+  }
+}
