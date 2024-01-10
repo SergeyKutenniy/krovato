@@ -3,3 +3,59 @@
   padding-top: 70px;
   padding-bottom: 70px;
 }
+
+.artikles__heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.articles__section-title {
+  font-size: 40px;
+  margin-right: 30px;
+}
+
+.atricles__link {
+  font-size: 19px;
+  line-height: 1.26;
+  color: $accent-color;
+}
+
+.articles__icon {
+  margin-left: 10px;
+}
+
+.articles__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.articles__item {
+  border-radius: 8px;
+  border: 1px solid #e3e2e2;
+  background: #fff;
+  box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.06);
+  flex-basis: calc((100% - 60px) / 3);
+  overflow: hidden;
+}
+
+.articles__title {
+  flex-grow: 1;
+  margin-bottom: 30px;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.31;
+}
+
+.articles__thumb {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 206px;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+}
