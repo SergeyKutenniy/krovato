@@ -7,7 +7,6 @@
 
   .container {
     display: flex;
-    gap: 80px;
   }
 }
 
@@ -53,12 +52,28 @@
   align-items: center;
 }
 
-.footer__pay-item:not(:last-child) {
-  margin-right: 20px;
+.footer__pay-item {
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
 }
 
-.footer__nav-block {
-  flex-basis: calc((100% - 320px) / 5);
+.footer__pay-link {
+  svg {
+    transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: $grey-light-color;
+  }
+
+  &:hover,
+  &:focus {
+    svg {
+      fill: $accent-color;
+    }
+  }
+}
+
+.footer__nav-block:not(:last-child) {
+  margin-right: 83px;
   p {
     font-size: 20px;
     font-weight: 700;
@@ -67,8 +82,61 @@
   }
 }
 
-.footer__nav-item:not(:last-child) {
-  margin-bottom: 10px;
+.footer__nav-item {
+  a {
+    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.footer__contacts {
+  width: 240px;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.footer__contact-box {
+  display: flex;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  svg {
+    margin-right: 15px;
+  }
+}
+
+.footer__tel-list {
+  margin-bottom: 15px;
+}
+
+.footer__tel-text {
+  a {
+    &:hover,
+    &:focus {
+      transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+      color: $accent-color;
+    }
+  }
+
+  :not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.footer__call-me-btn {
+  border: none;
+  background-color: transparent;
+  color: $accent-color;
 }
 
 .footer__copyright {

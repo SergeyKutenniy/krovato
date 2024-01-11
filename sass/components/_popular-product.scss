@@ -36,6 +36,12 @@
   border: 1px solid #e3e2e2;
   background: #fff;
   box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
 }
 
 .popular-product__item:not(:nth-child(4n)) {
