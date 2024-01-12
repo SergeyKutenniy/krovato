@@ -13,10 +13,16 @@
 .popular-category__list {
   display: flex;
   flex-wrap: wrap;
+  column-gap: 10px;
 }
 
 .popular-category__item {
+  width: calc((100% - 40px) / 5);
+  height: 300px;
+  position: relative;
+  padding: 20px;
   border-radius: 8px;
+  background-color: #ffffff;
   overflow: hidden;
   transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -24,10 +30,12 @@
   &:focus {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
-}
 
-.popular-category__item:not(:nth-child(5n)) {
-  margin-right: 10px;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 
 .popular-category__item:nth-child(-n + 5) {
@@ -37,13 +45,14 @@
 .card-title__quantity {
   display: inline-block;
   margin-left: auto;
+  color: $grey-light-color;
 }
 
 .popular-category__card-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   font-size: 20px;
   line-height: 1.4;
-
-  span {
-    color: $grey-light-color;
-  }
 }
