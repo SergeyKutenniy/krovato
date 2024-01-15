@@ -467,7 +467,7 @@ address {
   overflow: hidden;
 }
 
-.slider {
+.hero__slider {
   position: relative;
   width: 500%;
   font-size: 0;
@@ -483,7 +483,7 @@ address {
   position: inherit;
 }
 
-.slider img {
+.hero__slider img {
   width: 100%;
   height: auto;
 }
@@ -993,6 +993,7 @@ address {
 .responses__descr {
   font-size: 16px;
   line-height: 1.88;
+  text-align: start;
   height: 150px;
   overflow: auto;
   padding-right: 10px;
@@ -1016,6 +1017,61 @@ address {
   font-size: 20px;
   font-weight: 700;
   line-height: 1.4;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 880px;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider .slider__item {
+  display: block;
+  text-align: center;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  margin: 0 15px;
+}
+
+.slider .slick-arrow {
+  position: absolute;
+  cursor: pointer;
+  font-size: 25px;
+  color: #ffbc57;
+  background-color: transparent;
+  padding: 3px 10px;
+  bottom: -50px;
+  border-radius: 50%;
+  border: 2px solid #ffbc57;
+}
+
+.slider .slick-prev {
+  right: 50px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.slider .slick-next {
+  right: 0px;
+}
+
+.slider .slider__counter {
+  position: absolute;
+  font-size: 20px;
+  bottom: -45px;
+  right: 100px;
 }
 
 .articles {

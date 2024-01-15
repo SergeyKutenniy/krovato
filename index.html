@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
         integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
@@ -182,7 +183,7 @@
                 <h1 class="visually-hidden">Магазин меблів</h1>
 
                 <div class="slider-gallery">
-                    <div class="slider">
+                    <div class="hero__slider">
                         <div class="box-slider">
                             <img src="./images/hero.jpg" alt="Hero image" width="1290">
                         </div>
@@ -645,106 +646,334 @@
                         </li>
                     </ul>
                 </div>
-                <ul class="responses__list">
-                    <li class="responses__item">
-                        <div class="responses__box-rating">
-                            <svg width="50" height="50">
-                                <use href="./images/symbol-defs.svg#avatar-icon"></use>
-                            </svg>
+                <div class="wrapper">
+                    <ul class="slider">
+                        <li class="slider__item">
+                            <div class="responses__item">
+                                <div class="responses__box-rating">
+                                    <svg width="50" height="50">
+                                        <use href="./images/symbol-defs.svg#avatar-icon"></use>
+                                    </svg>
 
-                            <div class="responses__title">
-                                <fieldset class="responses__rating">
-                                    <legend class="responses__human responses__caption">
-                                        <h4>Іван Стедниця</h4>
-                                        <p>25.01.2022</p>
-                                    </legend>
-                                    <div class="rating__group">
-                                        <input class="rating__star" type="radio" name="rating" value="1"
-                                            aria-label="Ужасно">
-                                        <input class="rating__star" type="radio" name="rating" value="2"
-                                            aria-label="Сносно">
-                                        <input class="rating__star" type="radio" name="rating" value="3"
-                                            aria-label="Нормально">
-                                        <input class="rating__star" type="radio" name="rating" value="4"
-                                            aria-label="Добре">
-                                        <input class="rating__star" type="radio" name="rating" value="5"
-                                            aria-label="Відмінно">
+                                    <div class="responses__title">
+                                        <fieldset class="responses__rating">
+                                            <legend class="responses__human responses__caption">
+                                                <h4>Іван Стедниця</h4>
+                                                <p>25.01.2022</p>
+                                            </legend>
+                                            <div class="rating__group">
+                                                <input class="rating__star" type="radio" name="rating" value="1"
+                                                    aria-label="Ужасно">
+                                                <input class="rating__star" type="radio" name="rating" value="2"
+                                                    aria-label="Сносно">
+                                                <input class="rating__star" type="radio" name="rating" value="3"
+                                                    aria-label="Нормально">
+                                                <input class="rating__star" type="radio" name="rating" value="4"
+                                                    aria-label="Добре">
+                                                <input class="rating__star" type="radio" name="rating" value="5"
+                                                    aria-label="Відмінно">
+                                            </div>
+                                        </fieldset>
                                     </div>
-                                </fieldset>
+
+                                </div>
+                                <p class="responses__descr" lang="ru">Хочу отметить слаженную и четкую работу всех
+                                    сотрудников ,
+                                    с кем пришлось
+                                    контактировать при
+                                    выборе и
+                                    покупке дивана
+                                    Orange-Line Родео SF17-LX6-PLNGR. Огромную помощь при выборе оказала специалист по
+                                    продажам
+                                    Ульяна.
+                                    Хочу отметить слаженную и четкую работу всех сотрудников ,
+                                    с кем пришлось
+                                    контактировать при
+                                    выборе и
+                                    покупке дивана
+                                    Orange-Line Родео SF17-LX6-PLNGR. Огромную помощь при выборе оказала специалист по
+                                    продажам
+                                    Ульяна.
+
+                                </p>
+                                <a class="responses__product-link" href="">
+                                    <img src="./images/response-product-icon.png" alt="Tovar icon" width="50">
+                                    <h4>Диван Orange-Line Родео SF...</h4>
+                                </a>
                             </div>
+                        </li>
+                        <li class="slider__item">
+                            <div class="responses__item">
+                                <div class="responses__box-rating">
+                                    <svg width="50" height="50">
+                                        <use href="./images/symbol-defs.svg#avatar-icon"></use>
+                                    </svg>
 
-                        </div>
-                        <p class="responses__descr" lang="ru">Хочу отметить слаженную и четкую работу всех сотрудников ,
-                            с кем пришлось
-                            контактировать при
-                            выборе и
-                            покупке дивана
-                            Orange-Line Родео SF17-LX6-PLNGR. Огромную помощь при выборе оказала специалист по продажам
-                            Ульяна.
-                            Хочу отметить слаженную и четкую работу всех сотрудников ,
-                            с кем пришлось
-                            контактировать при
-                            выборе и
-                            покупке дивана
-                            Orange-Line Родео SF17-LX6-PLNGR. Огромную помощь при выборе оказала специалист по продажам
-                            Ульяна.
-
-                        </p>
-                        <a class="responses__product-link" href="">
-                            <img src="./images/response-product-icon.png" alt="Tovar icon" width="50">
-                            <h4>Диван Orange-Line Родео SF...</h4>
-                        </a>
-                    </li>
-                    <li class="responses__item">
-                        <div class="responses__box-rating">
-                            <svg width="50" height="50">
-                                <use href="./images/symbol-defs.svg#avatar-icon"></use>
-                            </svg>
-
-                            <div class="responses__title">
-                                <fieldset class="responses__rating">
-                                    <legend class="responses__human responses__caption">
-                                        <h4>Іван Стедниця</h4>
-                                        <p>25.01.2022</p>
-                                    </legend>
-                                    <div class="rating__group">
-                                        <input class="rating__star" type="radio" name="rating" value="1"
-                                            aria-label="Ужасно">
-                                        <input class="rating__star" type="radio" name="rating" value="2"
-                                            aria-label="Сносно">
-                                        <input class="rating__star" type="radio" name="rating" value="3"
-                                            aria-label="Нормально">
-                                        <input class="rating__star" type="radio" name="rating" value="4"
-                                            aria-label="Добре">
-                                        <input class="rating__star" type="radio" name="rating" value="5"
-                                            aria-label="Відмінно">
+                                    <div class="responses__title">
+                                        <fieldset class="responses__rating">
+                                            <legend class="responses__human responses__caption">
+                                                <h4>Іван Стедниця</h4>
+                                                <p>25.01.2022</p>
+                                            </legend>
+                                            <div class="rating__group">
+                                                <input class="rating__star" type="radio" name="rating" value="1"
+                                                    aria-label="Ужасно">
+                                                <input class="rating__star" type="radio" name="rating" value="2"
+                                                    aria-label="Сносно">
+                                                <input class="rating__star" type="radio" name="rating" value="3"
+                                                    aria-label="Нормально">
+                                                <input class="rating__star" type="radio" name="rating" value="4"
+                                                    aria-label="Добре">
+                                                <input class="rating__star" type="radio" name="rating" value="5"
+                                                    aria-label="Відмінно">
+                                            </div>
+                                        </fieldset>
                                     </div>
-                                </fieldset>
+
+                                </div>
+                                <p class="responses__descr" lang="ru">Хочу отметить слаженную и четкую работу всех
+                                    сотрудников ,
+                                    с кем пришлось
+                                    контактировать при
+                                    выборе и
+                                    покупке дивана
+                                    Orange-Line Родео SF17-LX6-PLNGR. Огромную помощь при выборе оказала специалист по
+                                    продажам
+                                    Ульяна.
+                                    Хочу отметить слаженную и четкую работу всех сотрудников ,
+                                    с кем пришлось
+                                    контактировать при
+                                    выборе и
+                                    покупке дивана
+                                    Orange-Line Родео SF17-LX6-PLNGR. Огромную помощь при выборе оказала специалист по
+                                    продажам
+                                    Ульяна.
+
+                                </p>
+                                <a class="responses__product-link" href="">
+                                    <img src="./images/response-product-icon.png" alt="Tovar icon" width="50">
+                                    <h4>Диван Orange-Line Родео SF...</h4>
+                                </a>
                             </div>
+                        </li>
+                        <li class="slider__item">
+                            <div class="responses__item">
+                                <div class="responses__box-rating">
+                                    <svg width="50" height="50">
+                                        <use href="./images/symbol-defs.svg#avatar-icon"></use>
+                                    </svg>
 
-                        </div>
-                        <p class="responses__descr" lang="ru">Хочу отметить слаженную и четкую работу всех сотрудников ,
-                            с кем пришлось
-                            контактировать при
-                            выборе и
-                            покупке дивана
-                            Orange-Line Родео SF17-LX6-PLNGR. Огромную помощь при выборе оказала специалист по продажам
-                            Ульяна.
-                            Хочу отметить слаженную и четкую работу всех сотрудников ,
-                            с кем пришлось
-                            контактировать при
-                            выборе и
-                            покупке дивана
-                            Orange-Line Родео SF17-LX6-PLNGR. Огромную помощь при выборе оказала специалист по продажам
-                            Ульяна.
+                                    <div class="responses__title">
+                                        <fieldset class="responses__rating">
+                                            <legend class="responses__human responses__caption">
+                                                <h4>Іван Стедниця</h4>
+                                                <p>25.01.2022</p>
+                                            </legend>
+                                            <div class="rating__group">
+                                                <input class="rating__star" type="radio" name="rating" value="1"
+                                                    aria-label="Ужасно">
+                                                <input class="rating__star" type="radio" name="rating" value="2"
+                                                    aria-label="Сносно">
+                                                <input class="rating__star" type="radio" name="rating" value="3"
+                                                    aria-label="Нормально">
+                                                <input class="rating__star" type="radio" name="rating" value="4"
+                                                    aria-label="Добре">
+                                                <input class="rating__star" type="radio" name="rating" value="5"
+                                                    aria-label="Відмінно">
+                                            </div>
+                                        </fieldset>
+                                    </div>
 
-                        </p>
-                        <a class="responses__product-link" href="">
-                            <img src="./images/response-product-icon.png" alt="Tovar icon" width="50">
-                            <h4>Диван Orange-Line Родео SF...</h4>
-                        </a>
-                    </li>
-                </ul>
+                                </div>
+                                <p class="responses__descr" lang="ru">Хочу отметить слаженную и четкую работу всех
+                                    сотрудников ,
+                                    с кем пришлось
+                                    контактировать при
+                                    выборе и
+                                    покупке дивана
+                                    Orange-Line Родео SF17-LX6-PLNGR. Огромную помощь при выборе оказала специалист по
+                                    продажам
+                                    Ульяна.
+                                    Хочу отметить слаженную и четкую работу всех сотрудников ,
+                                    с кем пришлось
+                                    контактировать при
+                                    выборе и
+                                    покупке дивана
+                                    Orange-Line Родео SF17-LX6-PLNGR. Огромную помощь при выборе оказала специалист по
+                                    продажам
+                                    Ульяна.
+
+                                </p>
+                                <a class="responses__product-link" href="">
+                                    <img src="./images/response-product-icon.png" alt="Tovar icon" width="50">
+                                    <h4>Диван Orange-Line Родео SF...</h4>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="slider__item">
+                            <div class="responses__item">
+                                <div class="responses__box-rating">
+                                    <svg width="50" height="50">
+                                        <use href="./images/symbol-defs.svg#avatar-icon"></use>
+                                    </svg>
+
+                                    <div class="responses__title">
+                                        <fieldset class="responses__rating">
+                                            <legend class="responses__human responses__caption">
+                                                <h4>Іван Стедниця</h4>
+                                                <p>25.01.2022</p>
+                                            </legend>
+                                            <div class="rating__group">
+                                                <input class="rating__star" type="radio" name="rating" value="1"
+                                                    aria-label="Ужасно">
+                                                <input class="rating__star" type="radio" name="rating" value="2"
+                                                    aria-label="Сносно">
+                                                <input class="rating__star" type="radio" name="rating" value="3"
+                                                    aria-label="Нормально">
+                                                <input class="rating__star" type="radio" name="rating" value="4"
+                                                    aria-label="Добре">
+                                                <input class="rating__star" type="radio" name="rating" value="5"
+                                                    aria-label="Відмінно">
+                                            </div>
+                                        </fieldset>
+                                    </div>
+
+                                </div>
+                                <p class="responses__descr" lang="ru">Хочу отметить слаженную и четкую работу всех
+                                    сотрудников ,
+                                    с кем пришлось
+                                    контактировать при
+                                    выборе и
+                                    покупке дивана
+                                    Orange-Line Родео SF17-LX6-PLNGR. Огромную помощь при выборе оказала специалист по
+                                    продажам
+                                    Ульяна.
+                                    Хочу отметить слаженную и четкую работу всех сотрудников ,
+                                    с кем пришлось
+                                    контактировать при
+                                    выборе и
+                                    покупке дивана
+                                    Orange-Line Родео SF17-LX6-PLNGR. Огромную помощь при выборе оказала специалист по
+                                    продажам
+                                    Ульяна.
+
+                                </p>
+                                <a class="responses__product-link" href="">
+                                    <img src="./images/response-product-icon.png" alt="Tovar icon" width="50">
+                                    <h4>Диван Orange-Line Родео SF...</h4>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="slider__item">
+                            <div class="responses__item">
+                                <div class="responses__box-rating">
+                                    <svg width="50" height="50">
+                                        <use href="./images/symbol-defs.svg#avatar-icon"></use>
+                                    </svg>
+
+                                    <div class="responses__title">
+                                        <fieldset class="responses__rating">
+                                            <legend class="responses__human responses__caption">
+                                                <h4>Іван Стедниця</h4>
+                                                <p>25.01.2022</p>
+                                            </legend>
+                                            <div class="rating__group">
+                                                <input class="rating__star" type="radio" name="rating" value="1"
+                                                    aria-label="Ужасно">
+                                                <input class="rating__star" type="radio" name="rating" value="2"
+                                                    aria-label="Сносно">
+                                                <input class="rating__star" type="radio" name="rating" value="3"
+                                                    aria-label="Нормально">
+                                                <input class="rating__star" type="radio" name="rating" value="4"
+                                                    aria-label="Добре">
+                                                <input class="rating__star" type="radio" name="rating" value="5"
+                                                    aria-label="Відмінно">
+                                            </div>
+                                        </fieldset>
+                                    </div>
+
+                                </div>
+                                <p class="responses__descr" lang="ru">Хочу отметить слаженную и четкую работу всех
+                                    сотрудников ,
+                                    с кем пришлось
+                                    контактировать при
+                                    выборе и
+                                    покупке дивана
+                                    Orange-Line Родео SF17-LX6-PLNGR. Огромную помощь при выборе оказала специалист по
+                                    продажам
+                                    Ульяна.
+                                    Хочу отметить слаженную и четкую работу всех сотрудников ,
+                                    с кем пришлось
+                                    контактировать при
+                                    выборе и
+                                    покупке дивана
+                                    Orange-Line Родео SF17-LX6-PLNGR. Огромную помощь при выборе оказала специалист по
+                                    продажам
+                                    Ульяна.
+
+                                </p>
+                                <a class="responses__product-link" href="">
+                                    <img src="./images/response-product-icon.png" alt="Tovar icon" width="50">
+                                    <h4>Диван Orange-Line Родео SF...</h4>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="slider__item">
+                            <div class="responses__item">
+                                <div class="responses__box-rating">
+                                    <svg width="50" height="50">
+                                        <use href="./images/symbol-defs.svg#avatar-icon"></use>
+                                    </svg>
+
+                                    <div class="responses__title">
+                                        <fieldset class="responses__rating">
+                                            <legend class="responses__human responses__caption">
+                                                <h4>Іван Стедниця</h4>
+                                                <p>25.01.2022</p>
+                                            </legend>
+                                            <div class="rating__group">
+                                                <input class="rating__star" type="radio" name="rating" value="1"
+                                                    aria-label="Ужасно">
+                                                <input class="rating__star" type="radio" name="rating" value="2"
+                                                    aria-label="Сносно">
+                                                <input class="rating__star" type="radio" name="rating" value="3"
+                                                    aria-label="Нормально">
+                                                <input class="rating__star" type="radio" name="rating" value="4"
+                                                    aria-label="Добре">
+                                                <input class="rating__star" type="radio" name="rating" value="5"
+                                                    aria-label="Відмінно">
+                                            </div>
+                                        </fieldset>
+                                    </div>
+
+                                </div>
+                                <p class="responses__descr" lang="ru">Хочу отметить слаженную и четкую работу всех
+                                    сотрудников ,
+                                    с кем пришлось
+                                    контактировать при
+                                    выборе и
+                                    покупке дивана
+                                    Orange-Line Родео SF17-LX6-PLNGR. Огромную помощь при выборе оказала специалист по
+                                    продажам
+                                    Ульяна.
+                                    Хочу отметить слаженную и четкую работу всех сотрудников ,
+                                    с кем пришлось
+                                    контактировать при
+                                    выборе и
+                                    покупке дивана
+                                    Orange-Line Родео SF17-LX6-PLNGR. Огромную помощь при выборе оказала специалист по
+                                    продажам
+                                    Ульяна.
+
+                                </p>
+                                <a class="responses__product-link" href="">
+                                    <img src="./images/response-product-icon.png" alt="Tovar icon" width="50">
+                                    <h4>Диван Orange-Line Родео SF...</h4>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
 
@@ -1062,6 +1291,10 @@
         <p class="container footer__copyright">&copy; KROVATO - Технології сну - 2022. Всі права захищені.</p>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/responses-slider.js" type="module"></script>
 </body>
 
 </html>

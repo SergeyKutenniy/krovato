@@ -172,6 +172,7 @@
 .responses__descr {
   font-size: 16px;
   line-height: 1.88;
+  text-align: start;
   height: 150px;
   overflow: auto;
   padding-right: 10px;
@@ -191,4 +192,50 @@
     font-weight: 700;
     line-height: 1.4;
   }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 880px;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider .slider__item {
+  display: block;
+  text-align: center;
+  transition: all 1s ease-out;
+  margin: 0 15px;
+}
+
+.slider .slick-arrow {
+  position: absolute;
+  cursor: pointer;
+  font-size: 25px;
+  color: $accent-color;
+  background-color: transparent;
+  padding: 3px 10px;
+  bottom: -50px;
+  border-radius: 50%;
+  border: 2px solid $accent-color;
+}
+
+.slider .slick-prev {
+  right: 50px;
+  transform: rotate(180deg);
+}
+
+.slider .slick-next {
+  right: 0px;
+}
+
+.slider .slider__counter {
+  position: absolute;
+  font-size: 20px;
+  bottom: -45px;
+  right: 100px;
 }
