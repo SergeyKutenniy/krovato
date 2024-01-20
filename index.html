@@ -86,7 +86,7 @@
                     </svg>
                 </a>
 
-                <button class="btn main-header__btn" type="button">
+                <button class="btn main-header__btn" type="button" data-open-modal>
                     <svg class="main-header__btn-icon" width="24" height="24">
                         <use href="./images/symbol-defs.svg#catalog-icon"></use>
                     </svg>
@@ -97,11 +97,36 @@
                     <input class="main-header__input" type="text" placeholder="Пошук товарів">
                 </label>
 
-                <a class="main-header__tel" href="tel:+380679294545">
-                    <svg class="main-header__tel-icon" width="50" height="50">
-                        <use href="./images/symbol-defs.svg#tel-header-icon"></use>
-                    </svg>067 929-45-45
-                </a>
+                <div class="header__tel-list">
+                    <a class="main-header__tel" href="tel:+380679294545">
+                        <svg class="main-header__tel-icon" width="50" height="50">
+                            <use href="./images/symbol-defs.svg#tel-header-icon"></use>
+                        </svg>067 929-45-45
+                    </a>
+
+                    <div class="header__tel-select">
+                        <svg class="main-header__tel-icon" width="50" height="50">
+                            <use href="./images/symbol-defs.svg#tel-header-icon"></use>
+                        </svg>
+                        <div>
+                            <p class="tel-select__title">Щодня з 9:00 до 18:00</p>
+                            <ul class="tel-select__list">
+                                <li class="tel-select__item"><a class="main-header__tel" href="tel:+380501334545">
+                                        067 929-45-45
+                                    </a></li>
+                                <li class="tel-select__item"><a class="main-header__tel" href="tel:+380501334545">
+                                        050 133-45-45
+                                    </a></li>
+                                <li class="tel-select__item"><a class="main-header__tel" href="tel:+380501334545">
+                                        093 170-75-45
+                                    </a></li>
+                            </ul>
+                            <button class="call-me-btn" type="button">Передзвоніть мені</button>
+                        </div>
+                    </div>
+                </div>
+
+
 
                 <ul class="main-header__add-list">
                     <li class="main-header__add-item">
@@ -1268,7 +1293,7 @@
                                 <li class="footer__tel-text"><a href="tel:+380501334545">+38 050 133-45-45</a></li>
                                 <li class="footer__tel-text"><a href="tel:+380931707545">+38 093 170-75-45</a></li>
                             </ul>
-                            <button class="footer__call-me-btn" type="button">Передзвоніть мені</button>
+                            <button class="call-me-btn" type="button">Передзвоніть мені</button>
                         </div>
                     </div>
                     <div class="footer__contact-box ">
@@ -1291,10 +1316,129 @@
         <p class="container footer__copyright">&copy; KROVATO - Технології сну - 2022. Всі права захищені.</p>
     </footer>
 
+    <div class="backdrop is-hidden" data-backdrop>
+        <div class="modal" data-close-modal>
+
+            <ul class="header-modal__product-list">
+                <li class="header-modal__product-item">
+                    <a href="">
+                        <svg width="40" height="40">
+                            <use href="./images/symbol-defs.svg#modal-lizhka-icon"></use>
+                        </svg>
+                        Ліжка
+                        <svg class="header-modal__vector-icon" width="7" height="11">
+                            <use href="./images/symbol-defs.svg#vector-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="header-modal__product-item">
+                    <a href="">
+                        <svg width="40" height="40">
+                            <use href="./images/symbol-defs.svg#modal-matrac-icon"></use>
+                        </svg>
+                        Матраци
+                        <svg class="header-modal__vector-icon" width="7" height="11">
+                            <use href="./images/symbol-defs.svg#vector-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="header-modal__product-item">
+                    <a href="">
+                        <svg width="40" height="40">
+                            <use href="./images/symbol-defs.svg#modal-mm-icon"></use>
+                        </svg>
+                        М’які меблі
+                        <svg class="header-modal__vector-icon" width="7" height="11">
+                            <use href="./images/symbol-defs.svg#vector-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="header-modal__product-item">
+                    <a href="">
+                        <svg width="40" height="40">
+                            <use href="./images/symbol-defs.svg#modal-shafa-icon"></use>
+                        </svg>
+                        Шафи
+                        <svg class="header-modal__vector-icon" width="7" height="11">
+                            <use href="./images/symbol-defs.svg#vector-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="header-modal__product-item">
+                    <a href="">
+                        <svg width="40" height="40">
+                            <use href="./images/symbol-defs.svg#modal-komod-icon"></use>
+                        </svg>
+                        Комоди
+                        <svg class="header-modal__vector-icon" width="7" height="11">
+                            <use href="./images/symbol-defs.svg#vector-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="header-modal__product-item">
+                    <a href="">
+                        <svg width="40" height="40">
+                            <use href="./images/symbol-defs.svg#modal-tumba-icon"></use>
+                        </svg>
+                        Тумби
+                        <svg class="header-modal__vector-icon" width="7" height="11">
+                            <use href="./images/symbol-defs.svg#vector-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="header-modal__product-item">
+                    <a href="">
+                        <svg width="40" height="40">
+                            <use href="./images/symbol-defs.svg#modal-stol-icon"></use>
+                        </svg>
+                        Столи
+                        <svg class="header-modal__vector-icon" width="7" height="11">
+                            <use href="./images/symbol-defs.svg#vector-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="header-modal__product-item">
+                    <a href="">
+                        <svg width="40" height="40">
+                            <use href="./images/symbol-defs.svg#modal-stilci-icon"></use>
+                        </svg>
+                        Стільці
+                        <svg class="header-modal__vector-icon" width="7" height="11">
+                            <use href="./images/symbol-defs.svg#vector-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="header-modal__product-item">
+                    <a href="">
+                        <svg width="40" height="40">
+                            <use href="./images/symbol-defs.svg#modal-mstiny-icon"></use>
+                        </svg>
+                        Меблеві стіни
+                        <svg class="header-modal__vector-icon" width="7" height="11">
+                            <use href="./images/symbol-defs.svg#vector-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="header-modal__product-item">
+                    <a href="">
+                        <svg width="40" height="40">
+                            <use href="./images/symbol-defs.svg#modal-kuhni-icon"></use>
+                        </svg>
+                        Кухні
+                        <svg class="header-modal__vector-icon" width="7" height="11">
+                            <use href="./images/symbol-defs.svg#vector-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/responses-slider.js" type="module"></script>
+    <script src="./js/modal.js" type="module"></script>
 </body>
 
 </html>
