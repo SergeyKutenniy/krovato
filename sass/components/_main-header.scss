@@ -103,6 +103,8 @@
 }
 
 .header__tel-list {
+  display: flex;
+  align-items: flex-start;
   position: relative;
 }
 
