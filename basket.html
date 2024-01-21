@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KROVATO</title>
+    <link rel="icon" href="./images/favicom.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body class="page">
+    <header>
+        <div class="pre-header">
+            <div class="container pre-header__common">
+                <nav>
+                    <ul class="pre-header__menu">
+                        <li class="pre-header__menu-item">
+                            <a class="pre-header__menu-link" href="">Про нас</a>
+                        </li>
+                        <li class="pre-header__menu-item">
+                            <a class="pre-header__menu-link" href="">Оплата</a>
+                        </li>
+                        <li class="pre-header__menu-item">
+                            <a class="pre-header__menu-link" href="">Доставка та збірка</a>
+                        </li>
+                        <li class="pre-header__menu-item">
+                            <a class="pre-header__menu-link" href="">Відгуки</a>
+                        </li>
+                        <li class="pre-header__menu-item">
+                            <a class="pre-header__menu-link" href="">Блог</a>
+                        </li>
+                        <li class="pre-header__menu-item">
+                            <a class="pre-header__menu-link" href="">Контакти</a>
+                        </li>
+                        <li class="pre-header__menu-item">
+                            <a class="pre-header__menu-link" href="./basket.html">Кошик</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="pre-header__social">
+                    <a class="pre-header__help-link" href="">Допомога і консультація:</a>
+                    <ul class="pre-header__messengers">
+                        <li class="pre-header__messengers-item">
+                            <a class="pre-header__messengers-link" href="https://www.whatsapp.com/?lang=uk"
+                                target="_blank" rel="noreferrer noopener">
+                                <svg class="messengers-icon" width="30" height="30">
+                                    <use href="./images/symbol-defs.svg#whatsapp-icon"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="pre-header__messengers-item">
+                            <a class="pre-header__messengers-link" href="https://web.telegram.org/a/" target="_blank"
+                                rel="noreferrer noopener">
+                                <svg class="messengers-icon" width="30" height="30" aria-hidden="true">
+                                    <use href="./images/symbol-defs.svg#telegram-icon"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="pre-header__messengers-item">
+                            <a class="pre-header__messengers-link" href="https://www.viber.com/ru/" target="_blank"
+                                rel="noreferrer noopener">
+                                <svg class="messengers-icon" width="30" height="30">
+                                    <use href="./images/symbol-defs.svg#viber-icon"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="custom-select">
+                        <select>
+                            <option value="uk">UA</option>
+                            <option value="uk">UA</option>
+                            <option value="ru">RU</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-header">
+            <div class="container">
+                <a class="main-header__logo" href="/index.html">
+                    <svg width="250" height="50">
+                        <use href="./images/symbol-defs.svg#logo-header-icon"></use>
+                    </svg>
+                </a>
+
+                <button class="btn main-header__btn" type="button" data-open-modal>
+                    <svg class="main-header__btn-icon" width="24" height="24">
+                        <use href="./images/symbol-defs.svg#catalog-icon"></use>
+                    </svg>
+                    Каталог
+                </button>
+
+                <label class="main-header__label">
+                    <input class="main-header__input" type="text" placeholder="Пошук товарів">
+                </label>
+
+                <div class="header__tel-list">
+                    <svg class="main-header__tel-icon" width="50" height="50">
+                        <use href="./images/symbol-defs.svg#tel-header-icon"></use>
+                    </svg>
+                    <div>
+                        <p class="tel-select__title">Щодня з 9:00 до 18:00</p>
+                        <a class="main-header__tel" href="tel:+380679294545">067 929-45-45</a>
+                    </div>
+
+                    <div class="header__tel-select">
+                        <svg class="main-header__tel-icon" width="50" height="50">
+                            <use href="./images/symbol-defs.svg#tel-header-icon"></use>
+                        </svg>
+                        <div>
+                            <p class="tel-select__title">Щодня з 9:00 до 18:00</p>
+                            <ul class="tel-select__list">
+                                <li class="tel-select__item"><a class="main-header__tel" href="tel:+380501334545">
+                                        067 929-45-45
+                                    </a></li>
+                                <li class="tel-select__item"><a class="main-header__tel" href="tel:+380501334545">
+                                        050 133-45-45
+                                    </a></li>
+                                <li class="tel-select__item"><a class="main-header__tel" href="tel:+380501334545">
+                                        093 170-75-45
+                                    </a></li>
+                            </ul>
+                            <button class="call-me-btn" type="button">Передзвоніть мені</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <ul class="main-header__add-list">
+                    <li class="main-header__add-item">
+                        <a class="main-header__add-link" href="">
+                            <svg class="main-header__add-icon" width="50" height="50">
+                                <use href="./images/symbol-defs.svg#favorite-header-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="main-header__add-item">
+                        <a class="main-header__add-link" href="">
+                            <svg class="main-header__add-icon" width="50" height="50">
+                                <use href="./images/symbol-defs.svg#basket-header-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="after-header__border">
+            <div class="container after-header">
+                <ul class="after-header__nav">
+                    <li class="after-header__nav-item">
+                        <a class="after-header__nav-link" href="">
+                            <svg class="after-header__nav-icon" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#star-icon"></use>
+                            </svg>
+                            Акції
+                        </a>
+                    </li>
+                    <li class="after-header__nav-item">
+                        <a class="after-header__nav-link" href="">
+                            <svg class="after-header__nav-icon" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#sale-icon"></use>
+                            </svg>
+                            Розпродаж
+                        </a>
+                    </li>
+                    <li class="after-header__nav-item">
+                        <a class="after-header__nav-link" href="">
+                            <svg class="after-header__nav-icon" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#credit-icon"></use>
+                            </svg>
+                            Купити в кредит
+                        </a>
+                    </li>
+                </ul>
+                <ul class="after-header__nav">
+                    <li class="after-header__nav-item">
+                        <a class="after-header__nav-link" href="">Дитяча</a>
+                    </li>
+                    <li class="after-header__nav-item">
+                        <a class="after-header__nav-link" href="">Кухня</a>
+                    </li>
+                    <li class="after-header__nav-item">
+                        <a class="after-header__nav-link" href="">Ванна</a>
+                    </li>
+                    <li class="after-header__nav-item">
+                        <a class="after-header__nav-link" href="">Спальня</a>
+                    </li>
+                    <li class="after-header__nav-item">
+                        <a class="after-header__nav-link" href="">Передпокій</a>
+                    </li>
+                    <li class="after-header__nav-item">
+                        <a class="after-header__nav-link" href="">Вітальня</a>
+                    </li>
+                    <li class="after-header__nav-item">
+                        <a class="after-header__nav-link" href="">Офіс</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer class="background-footer">
+        <div class="footer">
+            <div class="container">
+                <div class="footer__nav-block">
+                    <a class="footer__logo" href="./index.html">
+                        <svg width="250" height="50">
+                            <use href="./images/symbol-defs.svg#logo-footer-icon"></use>
+                        </svg>
+                    </a>
+                    <p class="footer__join-help">Приєднуйтесь:</p>
+                    <ul class="footer__social-list">
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" href="https://www.facebook.com/" target="_blank"
+                                rel="noreferrer noopener">
+                                <svg width="40" height="40">
+                                    <use href="./images/symbol-defs.svg#facebook-icon"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" href="https://www.instagram.com/" target="_blank"
+                                rel="noreferrer noopener">
+                                <svg width="40" height="40">
+                                    <use href="./images/symbol-defs.svg#instagram-icon"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <p class="footer__join-help">Допомога і консультація:</p>
+                    <ul class="footer__social-list">
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" href="https://www.whatsapp.com/?lang=uk" target="_blank"
+                                rel="noreferrer noopener">
+                                <svg width="40" height="40">
+                                    <use href="./images/symbol-defs.svg#whatsapp-icon"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" href="https://web.telegram.org/a/" target="_blank"
+                                rel="noreferrer noopener">
+                                <svg width="40" height="40">
+                                    <use href="./images/symbol-defs.svg#telegram-icon"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" href="https://www.viber.com/ru/" target="_blank"
+                                rel="noreferrer noopener">
+                                <svg width="40" height="40">
+                                    <use href="./images/symbol-defs.svg#viber-icon"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="footer__pay-list">
+                        <li class="footer__pay-item">
+                            <a class="footer__pay-link" href="">
+                                <svg width="70" height="30">
+                                    <use href="./images/symbol-defs.svg#visa-icon"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__pay-item">
+                            <a class="footer__pay-link" href="">
+                                <svg tabindex="1" width="89" height="30">
+                                    <use href="./images/symbol-defs.svg#mastercard-icon"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__nav-block">
+                    <p>Інформація</p>
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item">
+                            <a href="">Про нас</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="">Оплата</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="">Доставка та збірка</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="">Відгуки</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="">Блог</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="">Контакти</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="">Мапа сайту</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__nav-block">
+                    <p>Категорії</p>
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item">
+                            <a href="">Ліжка</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="">Матраци</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="">М’які меблі</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="">Шафи</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="">Комоди</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="">Тумби</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="">Стільці</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="">Меблеві стіни</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="">Кухні</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__nav-block">
+                    <p>Клієнтам</p>
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item">
+                            <a href="">Акції</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="">Розпродаж</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="">Купити в кредит</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="">Обмін і повернення товару</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="">Часто задавані питання</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="">Умови покупки</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="">Політика конфіденційності</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__contacts">
+                    <div class="footer__contact-box">
+                        <svg width="50" height="50">
+                            <use href="./images/symbol-defs.svg#tel-footer-icon"></use>
+                        </svg>
+                        <div>
+                            <ul class="footer__tel-list">
+                                <li class="footer__tel-text"><a href="tel:+380679294545">+38 067 929-45-45</a></li>
+                                <li class="footer__tel-text"><a href="tel:+380501334545">+38 050 133-45-45</a></li>
+                                <li class="footer__tel-text"><a href="tel:+380931707545">+38 093 170-75-45</a></li>
+                            </ul>
+                            <button class="call-me-btn" type="button">Передзвоніть мені</button>
+                        </div>
+                    </div>
+                    <div class="footer__contact-box ">
+                        <svg width="50" height="50">
+                            <use href="./images/symbol-defs.svg#adress-icon"></use>
+                        </svg>
+                        <address>
+                            м. Київ, провулок Ізяславський 52, поверх 2
+                        </address>
+                    </div>
+                    <div class="footer__contact-box">
+                        <svg width="50" height="50">
+                            <use href="./images/symbol-defs.svg#calendar-icon"></use>
+                        </svg>
+                        <p>Працюємо щодня<br> з 9:00 до 18:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="container footer__copyright">&copy; KROVATO - Технології сну - 2022. Всі права захищені.</p>
+    </footer>
+
+
+    <script src="./js/language-select.js" type="module"></script>
+
+</body>
+
+</html>
