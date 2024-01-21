@@ -23,7 +23,7 @@
   padding: 20px;
   border-radius: 8px;
   background-color: #ffffff;
-  overflow: hidden;
+  // overflow: hidden;
   transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
@@ -35,6 +35,13 @@
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 2;
+
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover img {
+    transform: perspective(600px) scale(1.1);
   }
 }
 
