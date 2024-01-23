@@ -9,9 +9,9 @@
     <link rel="icon" href="./images/favicom.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
         integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="./css/main.min.css">
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./css/basket.min.css">
 </head>
 
 <body class="page">
@@ -210,7 +210,165 @@
     </header>
 
     <main>
+        <div class="container">
+            <h1>Оформлення замовлення</h1>
 
+            <form class="form">
+                <fieldset class="form-group">
+                    <legend class="group-title">Інформація про покупця</legend>
+                    <svg width="30" height="30">
+                        <use href="./images/symbol-defs.svg#info-icon"></use>
+                    </svg>
+                    <input type="text" name="last name" autofocus placeholder="Прізвище">
+                    <input type="text" name="first name" placeholder="Ім’я">
+                    <input type="text" name="surname" placeholder="По батькові">
+                    <input type="tel" name="tel" placeholder="Контактний телефон">
+                    <input type="email" name="email" placeholder="E-mail">
+                    <label>
+                        <input type="checkbox" name="receiver">
+                        Отримуватиме замовлення інша людина
+                    </label>
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <legend class="group-title">Вибір способу доставки</legend>
+                    <svg width="30" height="26">
+                        <use href="./images/symbol-defs.svg#delivery-small-icon"></use>
+                    </svg>
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="radio" name="delivery" value="pickup">
+                                <svg width="33" height="33">
+                                    <use href="./images/symbol-defs.svg#checkmark-icon"></use>
+                                </svg>
+                                Самовивіз із магазину <br>Бесплатно
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="delivery" value="nova post">
+                                <svg width="40" height="40">
+                                    <use href="./images/symbol-defs.svg#nova-icon"></use>
+                                </svg>
+                                Доставка Нова Пошта <br>≈ від 500 грн
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="delivery" value="courier">
+                                <svg width="38" height="40">
+                                    <use href="./images/symbol-defs.svg#courier-icon"></use>
+                                </svg>
+                                Доставка кур'єром <br>≈ від 200 грн
+                            </label>
+                        </li>
+                    </ul>
+
+                    <address>
+                        <svg width="28" height="34">
+                            <use href="./images/symbol-defs.svg#location-icon"></use>
+                        </svg>
+                        <p>Графік роботи: щодня з 9:00 до 18:00</p>
+                        <p>м. Київ, пров. Ізяславський 52, пов. 2</p>
+                        <a href="">
+                            <svg width="20" height="18">
+                                <use href="./images/symbol-defs.svg#map-icon"></use>
+                            </svg>
+                            На мапі
+                        </a>
+                    </address>
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <legend class="group-title">Вибір способу оплати</legend>
+                    <svg width="30" height="27">
+                        <use href="./images/symbol-defs.svg#map-icon"></use>
+                    </svg>
+                    <ul>
+                        <li class="form-field">
+                            <input type="radio" name="payment" value="postpaid" id="postpaid">
+                            <label class="form-label" for="postpaid">Готівкою при отриманні (Післясплата)</label>
+                        </li>
+                        <li class="form-field">
+                            <input type="radio" name="payment" value="payment-by-card" id="payment-by-card">
+                            <label class="form-label" for="payment-by-card">Оплата карткою на сайті</label>
+                            <svg width="32" height="25">
+                                <use href="./images/symbol-defs.svg#mastercard-icon"></use>
+                            </svg>
+                            <svg width="48" height="32">
+                                <use href="./images/symbol-defs.svg#visa-card-logo-icon"></use>
+                            </svg>
+                        </li>
+                        <li class="form-field">
+                            <input type="radio" name="payment" value="privat-pay" id="privat-pay">
+                            <label class="form-label" for="privat-pay">Privat Pay</label>
+                            <svg width="48" height="32">
+                                <use href="./images/symbol-defs.svg#privat-pay-logo-icon"></use>
+                            </svg>
+                        </li>
+                        <li class="form-field">
+                            <input type="radio" name="payment" value="credit-krovato" id="credit-krovato">
+                            <label class="form-label" for="credit-krovato">Кредит від Krovato</label>
+                        </li>
+                        <li class="form-field">
+                            <input type="radio" name="payment" value="payment-in-parts-privat"
+                                id="payment-in-parts-privat">
+                            <label class="form-label" for="payment-in-parts-privat">Оплата частинами ПриватБанк</label>
+                            <svg width="48" height="32">
+                                <use href="./images/symbol-defs.svg#privaty-credit-logo-icon"></use>
+                            </svg>
+                        </li>
+                        <li class="form-field">
+                            <input type="radio" name="payment" value="payment-in-parts-mono" id="payment-in-parts-mono">
+                            <label class="form-label" for="payment-in-parts-mono">Оплата частинами МоноБанк</label>
+                            <svg width="24" height="24">
+                                <use href="./images/symbol-defs.svg#paw-icon"></use>
+                            </svg>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <legend class="group-title">Коментар до замовлення</legend>
+                    <svg width="36" height="36">
+                        <use href="./images/symbol-defs.svg#comment-icon"></use>
+                    </svg>
+                    <textarea name="comment" rows="5" placeholder="Ваш коментар"></textarea>
+                </fieldset>
+            </form>
+
+            <div class="basket">
+
+            </div>
+
+            <ul class="section-descr__icons-list">
+                <li class="section-descr__icons-item">
+                    <svg width="80" height="80">
+                        <use href="./images/symbol-defs.svg#delivery-icon"></use>
+                    </svg>
+                    <h3>Безкоштовна доставка</h3>
+                </li>
+                <li class="section-descr__icons-item">
+                    <svg width="80" height="80">
+                        <use href="./images/symbol-defs.svg#assembly-icon"></use>
+                    </svg>
+                    <h3>Безкоштовна збірка</h3>
+                </li>
+                <li class="section-descr__icons-item">
+                    <svg width="80" height="80">
+                        <use href="./images/symbol-defs.svg#service-icon"></use>
+                    </svg>
+                    <h3>Післягарантійне обслуговування</h3>
+                </li>
+                <li class="section-descr__icons-item">
+                    <svg width="80" height="80">
+                        <use href="./images/symbol-defs.svg#discount-icon"></use>
+                    </svg>
+                    <h3>Знижки клієнтам</h3>
+                </li>
+            </ul>
+        </div>
     </main>
 
     <footer class="background-footer">
@@ -274,14 +432,14 @@
                         <li class="footer__pay-item">
                             <a class="footer__pay-link" href="">
                                 <svg width="70" height="30">
-                                    <use href="./images/symbol-defs.svg#visa-icon"></use>
+                                    <use href="./images/symbol-defs.svg#footer-visa-icon"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="footer__pay-item">
                             <a class="footer__pay-link" href="">
                                 <svg tabindex="1" width="89" height="30">
-                                    <use href="./images/symbol-defs.svg#mastercard-icon"></use>
+                                    <use href="./images/symbol-defs.svg#footer-mastercard-icon"></use>
                                 </svg>
                             </a>
                         </li>
@@ -409,8 +567,231 @@
         <p class="container footer__copyright">&copy; KROVATO - Технології сну - 2022. Всі права захищені.</p>
     </footer>
 
+    <div class="backdrop is-hidden" data-backdrop>
+        <div class="modal" data-close-modal>
+
+            <ul class="header-modal__product-list">
+                <li class="header-modal__product-item">
+
+                    <svg width="40" height="40">
+                        <use href="./images/symbol-defs.svg#modal-lizhka-icon"></use>
+                    </svg>
+                    <p>Ліжка</p>
+                    <svg class="header-modal__vector-icon" width="7" height="11">
+                        <use href="./images/symbol-defs.svg#vector-icon"></use>
+                    </svg>
+                    <ul class="header-modal__sub-menu">
+                        <li>
+                            <a href="">Односпальні ліжка</a>
+                        </li>
+                        <li>
+                            <a href="">Двоспальні ліжка</a>
+                        </li>
+                        <li>
+                            <a href="">Пружинний блок Bonnel</a>
+                        </li>
+                        <li>
+                            <a href="">Пружинний блок Pocket Spring</a>
+                        </li>
+                        <li>
+                            <a href="">Безпружинні ліжка</a>
+                        </li>
+                        <li>
+                            <a href="">Ліжка з ефектом Зима-Літо</a>
+                        </li>
+                        <li>
+                            <a href="">Футони</a>
+                        </li>
+                        <li>
+                            <a href="">Дитячі ліжка</a>
+                        </li>
+                        <li>
+                            <a href="">Ліжка Економ</a>
+                        </li>
+                    </ul>
+
+                </li>
+                <li class="header-modal__product-item">
+                    <a href="">
+                        <svg width="40" height="40">
+                            <use href="./images/symbol-defs.svg#modal-matrac-icon"></use>
+                        </svg>
+                        Матраци
+                        <svg class="header-modal__vector-icon" width="7" height="11">
+                            <use href="./images/symbol-defs.svg#vector-icon"></use>
+                        </svg>
+                        <ul class="header-modal__sub-menu">
+                            <li><a href="">Односпальні матраци</a></li>
+                            <li><a href="">Двоспальні матраци</a></li>
+                            <li><a href="">Пружинний блок Bonnel</a></li>
+                            <li><a href="">Пружинний блок Pocket Spring</a></li>
+                            <li><a href="">Безпружинні матраци</a></li>
+                            <li><a href="">Матраци з ефектом Зима-Літо</a></li>
+                            <li><a href="">Футони</a></li>
+                            <li><a href="">Дитячі матраци</a></li>
+                            <li><a href="">Матраци Економ</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="header-modal__product-item">
+                    <a href="">
+                        <svg width="40" height="40">
+                            <use href="./images/symbol-defs.svg#modal-mm-icon"></use>
+                        </svg>
+                        М’які меблі
+                        <svg class="header-modal__vector-icon" width="7" height="11">
+                            <use href="./images/symbol-defs.svg#vector-icon"></use>
+                        </svg>
+                        <ul class="header-modal__sub-menu">
+                            <li><a href="">Дивани</a></li>
+                            <li><a href="">Крісла</a></li>
+                            <li><a href="">Канапе</a></li>
+                            <li><a href="">Пуфики</a></li>
+                            <li><a href="">Лаунж-зони</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="header-modal__product-item">
+                    <a href="">
+                        <svg width="40" height="40">
+                            <use href="./images/symbol-defs.svg#modal-shafa-icon"></use>
+                        </svg>
+                        Шафи
+                        <svg class="header-modal__vector-icon" width="7" height="11">
+                            <use href="./images/symbol-defs.svg#vector-icon"></use>
+                        </svg>
+                        <ul class="header-modal__sub-menu">
+                            <li><a href="">Гардероб</a></li>
+                            <li><a href="">Сервант</a></li>
+                            <li><a href="">Буфет</a></li>
+                            <li><a href="">Книжкова шафа</a></li>
+                            <li><a href="">Бар</a></li>
+                            <li><a href="">Сейф</a></li>
+                            <li><a href="">Моделі спеціального призначення</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="header-modal__product-item">
+                    <a href="">
+                        <svg width="40" height="40">
+                            <use href="./images/symbol-defs.svg#modal-komod-icon"></use>
+                        </svg>
+                        Комоди
+                        <svg class="header-modal__vector-icon" width="7" height="11">
+                            <use href="./images/symbol-defs.svg#vector-icon"></use>
+                        </svg>
+                        <ul class="header-modal__sub-menu">
+                            <li><a href="">Класичні</a></li>
+                            <li><a href="">З дверцятами</a></li>
+                            <li><a href="">Комбінований</a></li>
+                            <li><a href="">Кутовий</a></li>
+                            <li><a href="">Радіусний</a></li>
+                            <li><a href="">Вітрина</a></li>
+                            <li><a href="">Зі стелажем</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="header-modal__product-item">
+                    <a href="">
+                        <svg width="40" height="40">
+                            <use href="./images/symbol-defs.svg#modal-tumba-icon"></use>
+                        </svg>
+                        Тумби
+                        <svg class="header-modal__vector-icon" width="7" height="11">
+                            <use href="./images/symbol-defs.svg#vector-icon"></use>
+                        </svg>
+                        <ul class="header-modal__sub-menu">
+                            <li><a href="">Класичні</a></li>
+                            <li><a href="">Кутові</a></li>
+                            <li><a href="">Вузькі</a></li>
+                            <li><a href="">Модульні</a></li>
+                            <li><a href="">Із сидінням</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="header-modal__product-item">
+                    <a href="">
+                        <svg width="40" height="40">
+                            <use href="./images/symbol-defs.svg#modal-stol-icon"></use>
+                        </svg>
+                        Столи
+                        <svg class="header-modal__vector-icon" width="7" height="11">
+                            <use href="./images/symbol-defs.svg#vector-icon"></use>
+                        </svg>
+                        <ul class="header-modal__sub-menu">
+                            <li><a href="">Обідні</a></li>
+                            <li><a href="">Комп'ютерні</a></li>
+                            <li><a href="">Журнальні</a></li>
+                            <li><a href="">Кавовий</a></li>
+                            <li><a href="">Кухонний</a></li>
+                            <li><a href="">Більярдний</a></li>
+                            <li><a href="">Верстак</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="header-modal__product-item">
+                    <a href="">
+                        <svg width="40" height="40">
+                            <use href="./images/symbol-defs.svg#modal-stilci-icon"></use>
+                        </svg>
+                        Стільці
+                        <svg class="header-modal__vector-icon" width="7" height="11">
+                            <use href="./images/symbol-defs.svg#vector-icon"></use>
+                        </svg>
+                        <ul class="header-modal__sub-menu">
+                            <li><a href="">Офісний</a></li>
+                            <li><a href="">Дитячий</a></li>
+                            <li><a href="">Барний</a></li>
+                            <li><a href="">Віденський</a></li>
+                            <li><a href="">Табурет</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="header-modal__product-item">
+                    <a href="">
+                        <svg width="40" height="40">
+                            <use href="./images/symbol-defs.svg#modal-mstiny-icon"></use>
+                        </svg>
+                        Меблеві стіни
+                        <svg class="header-modal__vector-icon" width="7" height="11">
+                            <use href="./images/symbol-defs.svg#vector-icon"></use>
+                        </svg>
+                        <ul class="header-modal__sub-menu">
+                            <li><a href="">Прямі</a></li>
+                            <li><a href="">Кутові</a></li>
+                            <li><a href="">Відкриті</a></li>
+                            <li><a href="">Закриті</a></li>
+                            <li><a href="">Модульні</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="header-modal__product-item">
+                    <a href="">
+                        <svg width="40" height="40">
+                            <use href="./images/symbol-defs.svg#modal-kuhni-icon"></use>
+                        </svg>
+                        Кухні
+                        <svg class="header-modal__vector-icon" width="7" height="11">
+                            <use href="./images/symbol-defs.svg#vector-icon"></use>
+                        </svg>
+                        <ul class="header-modal__sub-menu">
+                            <li><a href="">Класичня</a></li>
+                            <li><a href="">Кутова</a></li>
+                            <li><a href="">Скандинавська</a></li>
+                            <li><a href="">Провансальська</a></li>
+                            <li><a href="">Модерністська</a></li>
+                            <li><a href="">Кантрі</a></li>
+                            <li><a href="">Сучасна</a></li>
+                        </ul>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
 
     <script src="./js/language-select.js" type="module"></script>
+    <script src="./js/modal.js" type="module"></script>
 
 </body>
 

@@ -1,0 +1,23 @@
+// Base styles
+
+@import './base/variables';
+@import './base/placeholders';
+@import './utils/reset';
+@import './font/proxima-nova';
+@import './utils/visually-hidden';
+@import './base/common';
+
+// Header styles
+
+@import './components/pre-header';
+@import './components/main-header';
+@import './components/after-header';
+@import './components/header-modal';
+
+// Main content styles
+
+@import './components/section-descr';
+
+// Footer styles
+
+@import './components/foooter';
