@@ -16,16 +16,16 @@
 
 // Hero styles
 
-@import './components/hero';
+@import './components/main/hero';
 
 // Main content styles
 
-@import './components/popular-category';
-@import './components/popular-product';
-@import './components/promotion';
-@import './components/responses';
-@import './components/articles';
-@import './components/section-descr';
+@import './components/main/popular-category';
+@import './components/main/popular-product';
+@import './components/main/promotion';
+@import './components/main/responses';
+@import './components/main/articles';
+@import './components/main/section-descr';
 
 // Footer styles
 

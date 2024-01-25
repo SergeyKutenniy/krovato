@@ -133,8 +133,6 @@
                     </div>
                 </div>
 
-
-
                 <ul class="main-header__add-list">
                     <li class="main-header__add-item">
                         <a class="main-header__add-link" href="">
@@ -209,82 +207,112 @@
         </div>
     </header>
 
-    <main>
+    <main class="section-bg">
         <div class="container">
-            <h1>Оформлення замовлення</h1>
+            <h1 class="basket__title">Оформлення замовлення</h1>
 
             <form class="form">
-                <fieldset class="form-group">
-                    <legend class="group-title">Інформація про покупця</legend>
-                    <svg width="30" height="30">
-                        <use href="./images/symbol-defs.svg#info-icon"></use>
-                    </svg>
-                    <input type="text" name="last name" autofocus placeholder="Прізвище">
-                    <input type="text" name="first name" placeholder="Ім’я">
-                    <input type="text" name="surname" placeholder="По батькові">
-                    <input type="tel" name="tel" placeholder="Контактний телефон">
-                    <input type="email" name="email" placeholder="E-mail">
-                    <label>
-                        <input type="checkbox" name="receiver">
+                <div class="form-group__client" role="group" aria-labelledby="client-group">
+                    <div class="form-group__wrapper-title">
+                        <div class="form-group__icon">
+                            <svg width="30" height="30">
+                                <use href="./images/symbol-defs.svg#info-icon"></use>
+                            </svg>
+                        </div>
+                        <h2 class="group-title" id="client-group">Інформація про покупця</h2>
+                    </div>
+
+                    <ul class="client__input-list">
+                        <li class="client__input-item">
+                            <input class="client-input" type="text" name="last name" autofocus placeholder="Прізвище">
+                        </li>
+                        <li class="client__input-item">
+                            <input class="client-input" type="tel" name="tel" placeholder="Контактний телефон">
+                        </li>
+                        <li class="client__input-item">
+                            <input class="client-input" type="text" name="first name" placeholder="Ім’я">
+                        </li>
+                        <li class="client__input-item">
+                            <input class="client-input" type="email" name="email" placeholder="E-mail">
+                        </li>
+                        <li class="client__input-item">
+                            <input class="client-input" type="text" name="surname" placeholder="По батькові">
+                        </li>
+                    </ul>
+
+                    <label class="client__receiver-field">
+                        <input type="checkbox" name="receiver" value="receiver">
+                        <span class="client__receiver-checkbox"></span>
                         Отримуватиме замовлення інша людина
                     </label>
-                </fieldset>
+                </div>
 
-                <fieldset class="form-group">
-                    <legend class="group-title">Вибір способу доставки</legend>
-                    <svg width="30" height="26">
-                        <use href="./images/symbol-defs.svg#delivery-small-icon"></use>
-                    </svg>
-                    <ul>
-                        <li>
-                            <label>
+                <div class="form-group__delivery" role="group" aria-labelledby="delivery-group">
+                    <div class="form-group__wrapper-title">
+                        <div class="form-group__icon">
+                            <svg width="30" height="26">
+                                <use href="./images/symbol-defs.svg#delivery-small-icon"></use>
+                            </svg>
+                        </div>
+                        <h2 class="group-title" id="delivery-group">Вибір способу доставки</h2>
+                    </div>
+
+                    <ul class="delivery__list">
+                        <li class="delivery__item">
+                            <label class="deliver__field">
                                 <input type="radio" name="delivery" value="pickup">
-                                <svg width="33" height="33">
+                                <svg width="40" height="40">
                                     <use href="./images/symbol-defs.svg#checkmark-icon"></use>
                                 </svg>
-                                Самовивіз із магазину <br>Бесплатно
+                                <div class="delivery__item-box"></div>
+                                <span>Самовивіз із магазину <br>Бесплатно</span>
                             </label>
                         </li>
-                        <li>
-                            <label>
+                        <li class="delivery__item">
+                            <label class="deliver__field">
                                 <input type="radio" name="delivery" value="nova post">
                                 <svg width="40" height="40">
                                     <use href="./images/symbol-defs.svg#nova-icon"></use>
                                 </svg>
-                                Доставка Нова Пошта <br>≈ від 500 грн
+                                <div class="delivery__item-box"></div>
+                                <span>Доставка Нова Пошта <br>≈ від 500 грн</span>
                             </label>
                         </li>
-                        <li>
-                            <label>
+                        <li class="delivery__item">
+                            <label class="deliver__field">
                                 <input type="radio" name="delivery" value="courier">
                                 <svg width="38" height="40">
                                     <use href="./images/symbol-defs.svg#courier-icon"></use>
                                 </svg>
-                                Доставка кур'єром <br>≈ від 200 грн
+                                <div class="delivery__item-box"></div>
+                                <span>Доставка кур'єром <br>≈ від 200 грн</span>
                             </label>
                         </li>
                     </ul>
 
-                    <address>
+                    <address class="delivery__address">
                         <svg width="28" height="34">
                             <use href="./images/symbol-defs.svg#location-icon"></use>
                         </svg>
-                        <p>Графік роботи: щодня з 9:00 до 18:00</p>
-                        <p>м. Київ, пров. Ізяславський 52, пов. 2</p>
-                        <a href="">
+                        <div class="delivery__address-text">
+                            <p>Графік роботи: щодня з 9:00 до 18:00</p>
+                            <p>м. Київ, пров. Ізяславський 52, пов. 2</p>
+                        </div>
+                        <a class="delivery__map-btn" href="">
                             <svg width="20" height="18">
                                 <use href="./images/symbol-defs.svg#map-icon"></use>
                             </svg>
                             На мапі
                         </a>
                     </address>
-                </fieldset>
+                </div>
 
-                <fieldset class="form-group">
-                    <legend class="group-title">Вибір способу оплати</legend>
+                <div class="form-group" role="group" aria-labelledby="payment-group">
                     <svg width="30" height="27">
                         <use href="./images/symbol-defs.svg#map-icon"></use>
                     </svg>
+                    <h2 class="group-title" id="payment-group">Вибір способу оплати</h2>
+
                     <ul>
                         <li class="form-field">
                             <input type="radio" name="payment" value="postpaid" id="postpaid">
@@ -327,15 +355,16 @@
                             </svg>
                         </li>
                     </ul>
-                </fieldset>
+                </div>
 
-                <fieldset class="form-group">
-                    <legend class="group-title">Коментар до замовлення</legend>
+                <div class="form-group" role="group" aria-labelledby="comment-group">
                     <svg width="36" height="36">
                         <use href="./images/symbol-defs.svg#comment-icon"></use>
                     </svg>
+                    <h2 class="group-title" id="comment-group">Коментар до замовлення</h2>
+
                     <textarea name="comment" rows="5" placeholder="Ваш коментар"></textarea>
-                </fieldset>
+                </div>
             </form>
 
             <div class="basket">
@@ -569,10 +598,8 @@
 
     <div class="backdrop is-hidden" data-backdrop>
         <div class="modal" data-close-modal>
-
             <ul class="header-modal__product-list">
                 <li class="header-modal__product-item">
-
                     <svg width="40" height="40">
                         <use href="./images/symbol-defs.svg#modal-lizhka-icon"></use>
                     </svg>
@@ -609,181 +636,162 @@
                             <a href="">Ліжка Економ</a>
                         </li>
                     </ul>
-
                 </li>
                 <li class="header-modal__product-item">
-                    <a href="">
-                        <svg width="40" height="40">
-                            <use href="./images/symbol-defs.svg#modal-matrac-icon"></use>
-                        </svg>
-                        Матраци
-                        <svg class="header-modal__vector-icon" width="7" height="11">
-                            <use href="./images/symbol-defs.svg#vector-icon"></use>
-                        </svg>
-                        <ul class="header-modal__sub-menu">
-                            <li><a href="">Односпальні матраци</a></li>
-                            <li><a href="">Двоспальні матраци</a></li>
-                            <li><a href="">Пружинний блок Bonnel</a></li>
-                            <li><a href="">Пружинний блок Pocket Spring</a></li>
-                            <li><a href="">Безпружинні матраци</a></li>
-                            <li><a href="">Матраци з ефектом Зима-Літо</a></li>
-                            <li><a href="">Футони</a></li>
-                            <li><a href="">Дитячі матраци</a></li>
-                            <li><a href="">Матраци Економ</a></li>
-                        </ul>
-                    </a>
+                    <svg width="40" height="40">
+                        <use href="./images/symbol-defs.svg#modal-matrac-icon"></use>
+                    </svg>
+                    <p>Матраци</p>
+                    <svg class="header-modal__vector-icon" width="7" height="11">
+                        <use href="./images/symbol-defs.svg#vector-icon"></use>
+                    </svg>
+                    <ul class="header-modal__sub-menu">
+                        <li><a href="">Односпальні матраци</a></li>
+                        <li><a href="">Двоспальні матраци</a></li>
+                        <li><a href="">Пружинний блок Bonnel</a></li>
+                        <li><a href="">Пружинний блок Pocket Spring</a></li>
+                        <li><a href="">Безпружинні матраци</a></li>
+                        <li><a href="">Матраци з ефектом Зима-Літо</a></li>
+                        <li><a href="">Футони</a></li>
+                        <li><a href="">Дитячі матраци</a></li>
+                        <li><a href="">Матраци Економ</a></li>
+                    </ul>
                 </li>
                 <li class="header-modal__product-item">
-                    <a href="">
-                        <svg width="40" height="40">
-                            <use href="./images/symbol-defs.svg#modal-mm-icon"></use>
-                        </svg>
-                        М’які меблі
-                        <svg class="header-modal__vector-icon" width="7" height="11">
-                            <use href="./images/symbol-defs.svg#vector-icon"></use>
-                        </svg>
-                        <ul class="header-modal__sub-menu">
-                            <li><a href="">Дивани</a></li>
-                            <li><a href="">Крісла</a></li>
-                            <li><a href="">Канапе</a></li>
-                            <li><a href="">Пуфики</a></li>
-                            <li><a href="">Лаунж-зони</a></li>
-                        </ul>
-                    </a>
+                    <svg width="40" height="40">
+                        <use href="./images/symbol-defs.svg#modal-mm-icon"></use>
+                    </svg>
+                    <p>М’які меблі</p>
+                    <svg class="header-modal__vector-icon" width="7" height="11">
+                        <use href="./images/symbol-defs.svg#vector-icon"></use>
+                    </svg>
+                    <ul class="header-modal__sub-menu">
+                        <li><a href="">Дивани</a></li>
+                        <li><a href="">Крісла</a></li>
+                        <li><a href="">Канапе</a></li>
+                        <li><a href="">Пуфики</a></li>
+                        <li><a href="">Лаунж-зони</a></li>
+                    </ul>
                 </li>
                 <li class="header-modal__product-item">
-                    <a href="">
-                        <svg width="40" height="40">
-                            <use href="./images/symbol-defs.svg#modal-shafa-icon"></use>
-                        </svg>
-                        Шафи
-                        <svg class="header-modal__vector-icon" width="7" height="11">
-                            <use href="./images/symbol-defs.svg#vector-icon"></use>
-                        </svg>
-                        <ul class="header-modal__sub-menu">
-                            <li><a href="">Гардероб</a></li>
-                            <li><a href="">Сервант</a></li>
-                            <li><a href="">Буфет</a></li>
-                            <li><a href="">Книжкова шафа</a></li>
-                            <li><a href="">Бар</a></li>
-                            <li><a href="">Сейф</a></li>
-                            <li><a href="">Моделі спеціального призначення</a></li>
-                        </ul>
-                    </a>
+                    <svg width="40" height="40">
+                        <use href="./images/symbol-defs.svg#modal-shafa-icon"></use>
+                    </svg>
+                    <p>Шафи</p>
+                    <svg class="header-modal__vector-icon" width="7" height="11">
+                        <use href="./images/symbol-defs.svg#vector-icon"></use>
+                    </svg>
+                    <ul class="header-modal__sub-menu">
+                        <li><a href="">Гардероб</a></li>
+                        <li><a href="">Сервант</a></li>
+                        <li><a href="">Буфет</a></li>
+                        <li><a href="">Книжкова шафа</a></li>
+                        <li><a href="">Бар</a></li>
+                        <li><a href="">Сейф</a></li>
+                        <li><a href="">Моделі спеціального призначення</a></li>
+                    </ul>
                 </li>
                 <li class="header-modal__product-item">
-                    <a href="">
-                        <svg width="40" height="40">
-                            <use href="./images/symbol-defs.svg#modal-komod-icon"></use>
-                        </svg>
-                        Комоди
-                        <svg class="header-modal__vector-icon" width="7" height="11">
-                            <use href="./images/symbol-defs.svg#vector-icon"></use>
-                        </svg>
-                        <ul class="header-modal__sub-menu">
-                            <li><a href="">Класичні</a></li>
-                            <li><a href="">З дверцятами</a></li>
-                            <li><a href="">Комбінований</a></li>
-                            <li><a href="">Кутовий</a></li>
-                            <li><a href="">Радіусний</a></li>
-                            <li><a href="">Вітрина</a></li>
-                            <li><a href="">Зі стелажем</a></li>
-                        </ul>
-                    </a>
+                    <svg width="40" height="40">
+                        <use href="./images/symbol-defs.svg#modal-komod-icon"></use>
+                    </svg>
+                    <p>Комоди</p>
+                    <svg class="header-modal__vector-icon" width="7" height="11">
+                        <use href="./images/symbol-defs.svg#vector-icon"></use>
+                    </svg>
+                    <ul class="header-modal__sub-menu">
+                        <li><a href="">Класичні</a></li>
+                        <li><a href="">З дверцятами</a></li>
+                        <li><a href="">Комбінований</a></li>
+                        <li><a href="">Кутовий</a></li>
+                        <li><a href="">Радіусний</a></li>
+                        <li><a href="">Вітрина</a></li>
+                        <li><a href="">Зі стелажем</a></li>
+                    </ul>
                 </li>
                 <li class="header-modal__product-item">
-                    <a href="">
-                        <svg width="40" height="40">
-                            <use href="./images/symbol-defs.svg#modal-tumba-icon"></use>
-                        </svg>
-                        Тумби
-                        <svg class="header-modal__vector-icon" width="7" height="11">
-                            <use href="./images/symbol-defs.svg#vector-icon"></use>
-                        </svg>
-                        <ul class="header-modal__sub-menu">
-                            <li><a href="">Класичні</a></li>
-                            <li><a href="">Кутові</a></li>
-                            <li><a href="">Вузькі</a></li>
-                            <li><a href="">Модульні</a></li>
-                            <li><a href="">Із сидінням</a></li>
-                        </ul>
-                    </a>
+                    <svg width="40" height="40">
+                        <use href="./images/symbol-defs.svg#modal-tumba-icon"></use>
+                    </svg>
+                    <p>Тумби</p>
+                    <svg class="header-modal__vector-icon" width="7" height="11">
+                        <use href="./images/symbol-defs.svg#vector-icon"></use>
+                    </svg>
+                    <ul class="header-modal__sub-menu">
+                        <li><a href="">Класичні</a></li>
+                        <li><a href="">Кутові</a></li>
+                        <li><a href="">Вузькі</a></li>
+                        <li><a href="">Модульні</a></li>
+                        <li><a href="">Із сидінням</a></li>
+                    </ul>
                 </li>
                 <li class="header-modal__product-item">
-                    <a href="">
-                        <svg width="40" height="40">
-                            <use href="./images/symbol-defs.svg#modal-stol-icon"></use>
-                        </svg>
-                        Столи
-                        <svg class="header-modal__vector-icon" width="7" height="11">
-                            <use href="./images/symbol-defs.svg#vector-icon"></use>
-                        </svg>
-                        <ul class="header-modal__sub-menu">
-                            <li><a href="">Обідні</a></li>
-                            <li><a href="">Комп'ютерні</a></li>
-                            <li><a href="">Журнальні</a></li>
-                            <li><a href="">Кавовий</a></li>
-                            <li><a href="">Кухонний</a></li>
-                            <li><a href="">Більярдний</a></li>
-                            <li><a href="">Верстак</a></li>
-                        </ul>
-                    </a>
+                    <svg width="40" height="40">
+                        <use href="./images/symbol-defs.svg#modal-stol-icon"></use>
+                    </svg>
+                    <p>Столи</p>
+                    <svg class="header-modal__vector-icon" width="7" height="11">
+                        <use href="./images/symbol-defs.svg#vector-icon"></use>
+                    </svg>
+                    <ul class="header-modal__sub-menu">
+                        <li><a href="">Обідні</a></li>
+                        <li><a href="">Комп'ютерні</a></li>
+                        <li><a href="">Журнальні</a></li>
+                        <li><a href="">Кавовий</a></li>
+                        <li><a href="">Кухонний</a></li>
+                        <li><a href="">Більярдний</a></li>
+                        <li><a href="">Верстак</a></li>
+                    </ul>
                 </li>
                 <li class="header-modal__product-item">
-                    <a href="">
-                        <svg width="40" height="40">
-                            <use href="./images/symbol-defs.svg#modal-stilci-icon"></use>
-                        </svg>
-                        Стільці
-                        <svg class="header-modal__vector-icon" width="7" height="11">
-                            <use href="./images/symbol-defs.svg#vector-icon"></use>
-                        </svg>
-                        <ul class="header-modal__sub-menu">
-                            <li><a href="">Офісний</a></li>
-                            <li><a href="">Дитячий</a></li>
-                            <li><a href="">Барний</a></li>
-                            <li><a href="">Віденський</a></li>
-                            <li><a href="">Табурет</a></li>
-                        </ul>
-                    </a>
+                    <svg width="40" height="40">
+                        <use href="./images/symbol-defs.svg#modal-stilci-icon"></use>
+                    </svg>
+                    <p>Стільці</p>
+                    <svg class="header-modal__vector-icon" width="7" height="11">
+                        <use href="./images/symbol-defs.svg#vector-icon"></use>
+                    </svg>
+                    <ul class="header-modal__sub-menu">
+                        <li><a href="">Офісний</a></li>
+                        <li><a href="">Дитячий</a></li>
+                        <li><a href="">Барний</a></li>
+                        <li><a href="">Віденський</a></li>
+                        <li><a href="">Табурет</a></li>
+                    </ul>
                 </li>
                 <li class="header-modal__product-item">
-                    <a href="">
-                        <svg width="40" height="40">
-                            <use href="./images/symbol-defs.svg#modal-mstiny-icon"></use>
-                        </svg>
-                        Меблеві стіни
-                        <svg class="header-modal__vector-icon" width="7" height="11">
-                            <use href="./images/symbol-defs.svg#vector-icon"></use>
-                        </svg>
-                        <ul class="header-modal__sub-menu">
-                            <li><a href="">Прямі</a></li>
-                            <li><a href="">Кутові</a></li>
-                            <li><a href="">Відкриті</a></li>
-                            <li><a href="">Закриті</a></li>
-                            <li><a href="">Модульні</a></li>
-                        </ul>
-                    </a>
+                    <svg width="40" height="40">
+                        <use href="./images/symbol-defs.svg#modal-mstiny-icon"></use>
+                    </svg>
+                    <p>Меблеві стіни</p>
+                    <svg class="header-modal__vector-icon" width="7" height="11">
+                        <use href="./images/symbol-defs.svg#vector-icon"></use>
+                    </svg>
+                    <ul class="header-modal__sub-menu">
+                        <li><a href="">Прямі</a></li>
+                        <li><a href="">Кутові</a></li>
+                        <li><a href="">Відкриті</a></li>
+                        <li><a href="">Закриті</a></li>
+                        <li><a href="">Модульні</a></li>
+                    </ul>
                 </li>
                 <li class="header-modal__product-item">
-                    <a href="">
-                        <svg width="40" height="40">
-                            <use href="./images/symbol-defs.svg#modal-kuhni-icon"></use>
-                        </svg>
-                        Кухні
-                        <svg class="header-modal__vector-icon" width="7" height="11">
-                            <use href="./images/symbol-defs.svg#vector-icon"></use>
-                        </svg>
-                        <ul class="header-modal__sub-menu">
-                            <li><a href="">Класичня</a></li>
-                            <li><a href="">Кутова</a></li>
-                            <li><a href="">Скандинавська</a></li>
-                            <li><a href="">Провансальська</a></li>
-                            <li><a href="">Модерністська</a></li>
-                            <li><a href="">Кантрі</a></li>
-                            <li><a href="">Сучасна</a></li>
-                        </ul>
-                    </a>
+                    <svg width="40" height="40">
+                        <use href="./images/symbol-defs.svg#modal-kuhni-icon"></use>
+                    </svg>
+                    <p>Кухні</p>
+                    <svg class="header-modal__vector-icon" width="7" height="11">
+                        <use href="./images/symbol-defs.svg#vector-icon"></use>
+                    </svg>
+                    <ul class="header-modal__sub-menu">
+                        <li><a href="">Класичня</a></li>
+                        <li><a href="">Кутова</a></li>
+                        <li><a href="">Скандинавська</a></li>
+                        <li><a href="">Провансальська</a></li>
+                        <li><a href="">Модерністська</a></li>
+                        <li><a href="">Кантрі</a></li>
+                        <li><a href="">Сучасна</a></li>
+                    </ul>
                 </li>
             </ul>
         </div>
