@@ -1,6 +1,10 @@
-.section-bg {
+.basket__section-bg {
   background-color: $light-color;
   padding-top: 30px;
+
+  & .section-descr__icons-list {
+    padding-bottom: 40px;
+  }
 }
 
 .basket__title {
@@ -12,10 +16,16 @@
 
 .form {
   max-width: 740px;
+  margin-bottom: 70px;
+  border-radius: 8px;
+  background-color: $light-color;
+  box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.06);
 }
 
 .form-group__client,
-.form-group__delivery {
+.form-group__delivery,
+.form-group__payment,
+.form-group__comment {
   padding: 30px;
   background-color: #ffffff;
   margin-bottom: 5px;
@@ -42,6 +52,11 @@
   font-size: 26px;
   font-weight: 600;
   line-height: 1.31;
+}
+
+.form-group__client {
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
 }
 
 .client__input-list {
@@ -102,7 +117,7 @@
 
 .client__receiver-field > input:checked + .client__receiver-checkbox {
   border: transparent;
-  background-image: url(../../../images/checkmark.svg);
+  background-image: url(../../../images/checkmark-yellow.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -209,4 +224,69 @@
   font-style: normal;
   font-weight: 600;
   line-height: 1.26;
+}
+
+.form-field__payment {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  & svg {
+    margin-left: 10px;
+  }
+
+  & > input {
+    // appearance: none;
+    // position: absolute;
+
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+.payment__radio-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid $grey-light-color;
+  margin-right: 12px;
+  transition: border-color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-field__payment > input:checked ~ .payment__radio-icon {
+  background-image: url(../../../images/checkmark-white.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-color: $accent-color;
+  background-color: $accent-color;
+  fill: #ffffff;
+}
+
+.form-group__comment {
+  margin-bottom: 0;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.form-group__comment textarea {
+  resize: none;
+  width: 100%;
+  height: 150px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid $grey-light-color;
+}
+
+.section-descr__icons-list {
 }

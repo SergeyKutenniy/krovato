@@ -207,7 +207,7 @@
         </div>
     </header>
 
-    <main class="section-bg">
+    <main class="basket__section-bg">
         <div class="container">
             <h1 class="basket__title">Оформлення замовлення</h1>
 
@@ -307,19 +307,25 @@
                     </address>
                 </div>
 
-                <div class="form-group" role="group" aria-labelledby="payment-group">
-                    <svg width="30" height="27">
-                        <use href="./images/symbol-defs.svg#map-icon"></use>
-                    </svg>
-                    <h2 class="group-title" id="payment-group">Вибір способу оплати</h2>
+                <div class="form-group__payment" role="group" aria-labelledby="payment-group">
+                    <div class="form-group__wrapper-title">
+                        <div class="form-group__icon">
+                            <svg width="30" height="27">
+                                <use href="./images/symbol-defs.svg#map-icon"></use>
+                            </svg>
+                        </div>
+                        <h2 class="group-title" id="payment-group">Вибір способу оплати</h2>
+                    </div>
 
                     <ul>
-                        <li class="form-field">
+                        <li class="form-field__payment">
                             <input type="radio" name="payment" value="postpaid" id="postpaid">
+                            <span class="payment__radio-icon"></span>
                             <label class="form-label" for="postpaid">Готівкою при отриманні (Післясплата)</label>
                         </li>
-                        <li class="form-field">
+                        <li class="form-field__payment">
                             <input type="radio" name="payment" value="payment-by-card" id="payment-by-card">
+                            <span class="payment__radio-icon"></span>
                             <label class="form-label" for="payment-by-card">Оплата карткою на сайті</label>
                             <svg width="32" height="25">
                                 <use href="./images/symbol-defs.svg#mastercard-icon"></use>
@@ -328,27 +334,31 @@
                                 <use href="./images/symbol-defs.svg#visa-card-logo-icon"></use>
                             </svg>
                         </li>
-                        <li class="form-field">
+                        <li class="form-field__payment">
                             <input type="radio" name="payment" value="privat-pay" id="privat-pay">
+                            <span class="payment__radio-icon"></span>
                             <label class="form-label" for="privat-pay">Privat Pay</label>
                             <svg width="48" height="32">
                                 <use href="./images/symbol-defs.svg#privat-pay-logo-icon"></use>
                             </svg>
                         </li>
-                        <li class="form-field">
+                        <li class="form-field__payment">
                             <input type="radio" name="payment" value="credit-krovato" id="credit-krovato">
+                            <span class="payment__radio-icon"></span>
                             <label class="form-label" for="credit-krovato">Кредит від Krovato</label>
                         </li>
-                        <li class="form-field">
+                        <li class="form-field__payment">
                             <input type="radio" name="payment" value="payment-in-parts-privat"
                                 id="payment-in-parts-privat">
+                            <span class="payment__radio-icon"></span>
                             <label class="form-label" for="payment-in-parts-privat">Оплата частинами ПриватБанк</label>
                             <svg width="48" height="32">
                                 <use href="./images/symbol-defs.svg#privaty-credit-logo-icon"></use>
                             </svg>
                         </li>
-                        <li class="form-field">
+                        <li class="form-field__payment">
                             <input type="radio" name="payment" value="payment-in-parts-mono" id="payment-in-parts-mono">
+                            <span class="payment__radio-icon"></span>
                             <label class="form-label" for="payment-in-parts-mono">Оплата частинами МоноБанк</label>
                             <svg width="24" height="24">
                                 <use href="./images/symbol-defs.svg#paw-icon"></use>
@@ -357,11 +367,15 @@
                     </ul>
                 </div>
 
-                <div class="form-group" role="group" aria-labelledby="comment-group">
-                    <svg width="36" height="36">
-                        <use href="./images/symbol-defs.svg#comment-icon"></use>
-                    </svg>
-                    <h2 class="group-title" id="comment-group">Коментар до замовлення</h2>
+                <div class="form-group__comment" role="group" aria-labelledby="comment-group">
+                    <div class="form-group__wrapper-title">
+                        <div class="form-group__icon">
+                            <svg width="36" height="36">
+                                <use href="./images/symbol-defs.svg#comment-icon"></use>
+                            </svg>
+                        </div>
+                        <h2 class="group-title" id="comment-group">Коментар до замовлення</h2>
+                    </div>
 
                     <textarea name="comment" rows="5" placeholder="Ваш коментар"></textarea>
                 </div>
