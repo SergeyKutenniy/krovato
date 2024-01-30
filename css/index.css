@@ -957,7 +957,8 @@ legend {
   margin-right: 10px;
 }
 
-.popular-product__add-link {
+.popular-product__favorite-btn,
+.popular-product__bascet-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -976,11 +977,15 @@ legend {
   border: none;
 }
 
-.popular-product__add-link:hover, .popular-product__add-link:focus {
+.popular-product__favorite-btn:hover, .popular-product__favorite-btn:focus,
+.popular-product__bascet-btn:hover,
+.popular-product__bascet-btn:focus {
   background-color: #ffbc57;
 }
 
-.popular-product__add-link:hover .popular-product__add-icon, .popular-product__add-link:focus .popular-product__add-icon {
+.popular-product__favorite-btn:hover .popular-product__add-icon, .popular-product__favorite-btn:focus .popular-product__add-icon,
+.popular-product__bascet-btn:hover .popular-product__add-icon,
+.popular-product__bascet-btn:focus .popular-product__add-icon {
   fill: #fff;
 }
 
