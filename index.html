@@ -137,14 +137,14 @@
 
                 <ul class="main-header__add-list">
                     <li class="main-header__add-item-favorite">
-                        <button type="button" class="main-header__add-link">
+                        <button type="button" class="main-header__favorite-btn">
                             <svg class="main-header__add-icon" width="50" height="50">
                                 <use href="./images/symbol-defs.svg#favorite-header-icon"></use>
                             </svg>
                         </button>
                     </li>
                     <li class="main-header__add-item-basket">
-                        <button type="button" class="main-header__add-link">
+                        <button type="button" class="main-header__bascet-btn">
                             <svg class="main-header__add-icon" width="50" height="50">
                                 <use href="./images/symbol-defs.svg#basket-header-icon"></use>
                             </svg>
@@ -371,11 +371,19 @@
                                     </button>
                                 </li>
                                 <li class="popular-product__add-item">
-                                    <button type="button" class="popular-product__bascet-btn">
+                                    <button type="button" class="popular-product__bascet-btn"
+                                        data-sb-id-or-vendor-code="001"
+                                        data-sb-product-name="Ліжко Спарта / Sparta з підйомним механізмом"
+                                        data-sb-product-price="15400" data-sb-product-quantity="1"
+                                        data-sb-product-img="./images/bed-sparta.jpg">
                                         <svg class="popular-product__add-icon" width="25" height="25">
                                             <use href="./images/symbol-defs.svg#basket-product-icon"></use>
                                         </svg>
                                     </button>
+                                    <div class="smart-basket__product-quantity">
+                                        <input class="smart-basket__product-quantity-state" type="number" min="1"
+                                            step="1" pattern="^[0-9]" value="1" data-sb-id="001">
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -397,18 +405,26 @@
                             <p class="popular-product__price">16 400 грн.</p>
                             <ul class="popular-product__add-list">
                                 <li class="popular-product__add-item">
-                                    <a class="popular-product__add-link" href="">
+                                    <button class="popular-product__favorite-btn" href="">
                                         <svg class="popular-product__add-icon" width="26" height="23">
                                             <use href="./images/symbol-defs.svg#favorite-product-icon"></use>
                                         </svg>
-                                    </a>
+                                    </button>
                                 </li>
                                 <li class="popular-product__add-item">
-                                    <a class="popular-product__add-link" href="">
+                                    <button type="button" class="popular-product__bascet-btn"
+                                        data-sb-id-or-vendor-code="002"
+                                        data-sb-product-name="Ліжко Аргон з підйомним механізмом"
+                                        data-sb-product-price="16400" data-sb-product-quantity="1"
+                                        data-sb-product-img="./images/bed-argon.jpg">
                                         <svg class="popular-product__add-icon" width="25" height="25">
                                             <use href="./images/symbol-defs.svg#basket-product-icon"></use>
                                         </svg>
-                                    </a>
+                                    </button>
+                                    <div class="smart-basket__product-quantity">
+                                        <input class="smart-basket__product-quantity-state" type="number" min="1"
+                                            step="1" pattern="^[0-9]" value="1" data-sb-id="002">
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -430,18 +446,26 @@
                             <p class="popular-product__price">14 969 грн.</p>
                             <ul class="popular-product__add-list">
                                 <li class="popular-product__add-item">
-                                    <a class="popular-product__add-link" href="">
+                                    <button class="popular-product__favorite-btn" href="">
                                         <svg class="popular-product__add-icon" width="26" height="23">
                                             <use href="./images/symbol-defs.svg#favorite-product-icon"></use>
                                         </svg>
-                                    </a>
+                                    </button>
                                 </li>
                                 <li class="popular-product__add-item">
-                                    <a class="popular-product__add-link" href="">
+                                    <button type="button" class="popular-product__bascet-btn"
+                                        data-sb-id-or-vendor-code="003"
+                                        data-sb-product-name="Ліжко Престиж з підйомним механізмом"
+                                        data-sb-product-price="14969" data-sb-product-quantity="1"
+                                        data-sb-product-img="./images/bed-prestige.jpg">
                                         <svg class="popular-product__add-icon" width="25" height="25">
                                             <use href="./images/symbol-defs.svg#basket-product-icon"></use>
                                         </svg>
-                                    </a>
+                                    </button>
+                                    <div class="smart-basket__product-quantity">
+                                        <input class="smart-basket__product-quantity-state" type="number" min="1"
+                                            step="1" pattern="^[0-9]" value="1" data-sb-id="003">
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -463,18 +487,25 @@
                             <p class="popular-product__price">13 211 грн.</p>
                             <ul class="popular-product__add-list">
                                 <li class="popular-product__add-item">
-                                    <a class="popular-product__add-link" href="">
+                                    <button class="popular-product__favorite-btn" href="">
                                         <svg class="popular-product__add-icon" width="26" height="23">
                                             <use href="./images/symbol-defs.svg#favorite-product-icon"></use>
                                         </svg>
-                                    </a>
+                                    </button>
                                 </li>
                                 <li class="popular-product__add-item">
-                                    <a class="popular-product__add-link" href="">
+                                    <button type="button" class="popular-product__bascet-btn"
+                                        data-sb-id-or-vendor-code="004" data-sb-product-name="Диван Токіо-2"
+                                        data-sb-product-price="13211" data-sb-product-quantity="1"
+                                        data-sb-product-img="./images/sofa-tokio.jpg">
                                         <svg class="popular-product__add-icon" width="25" height="25">
                                             <use href="./images/symbol-defs.svg#basket-product-icon"></use>
                                         </svg>
-                                    </a>
+                                    </button>
+                                    <div class="smart-basket__product-quantity">
+                                        <input class="smart-basket__product-quantity-state" type="number" min="1"
+                                            step="1" pattern="^[0-9]" value="1" data-sb-id="004">
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -496,18 +527,26 @@
                             <p class="popular-product__price">2 810 грн.</p>
                             <ul class="popular-product__add-list">
                                 <li class="popular-product__add-item">
-                                    <a class="popular-product__add-link" href="">
+                                    <button class="popular-product__favorite-btn" href="">
                                         <svg class="popular-product__add-icon" width="26" height="23">
                                             <use href="./images/symbol-defs.svg#favorite-product-icon"></use>
                                         </svg>
-                                    </a>
+                                    </button>
                                 </li>
                                 <li class="popular-product__add-item">
-                                    <a class="popular-product__add-link" href="">
+                                    <button type="button" class="popular-product__bascet-btn"
+                                        data-sb-id-or-vendor-code="005"
+                                        data-sb-product-name="Матрац Largo SLIM / Ларго Слім"
+                                        data-sb-product-price="2810" data-sb-product-quantity="1"
+                                        data-sb-product-img="./images/martesse-largo-slim.jpg">
                                         <svg class="popular-product__add-icon" width="25" height="25">
                                             <use href="./images/symbol-defs.svg#basket-product-icon"></use>
                                         </svg>
-                                    </a>
+                                    </button>
+                                    <div class="smart-basket__product-quantity">
+                                        <input class="smart-basket__product-quantity-state" type="number" min="1"
+                                            step="1" pattern="^[0-9]" value="1" data-sb-id="005">
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -529,18 +568,26 @@
                             <p class="popular-product__price">5 071 грн.</p>
                             <ul class="popular-product__add-list">
                                 <li class="popular-product__add-item">
-                                    <a class="popular-product__add-link" href="">
+                                    <button class="popular-product__favorite-btn" href="">
                                         <svg class="popular-product__add-icon" width="26" height="23">
                                             <use href="./images/symbol-defs.svg#favorite-product-icon"></use>
                                         </svg>
-                                    </a>
+                                    </button>
                                 </li>
                                 <li class="popular-product__add-item">
-                                    <a class="popular-product__add-link" href="">
+                                    <button type="button" class="popular-product__bascet-btn"
+                                        data-sb-id-or-vendor-code="006"
+                                        data-sb-product-name="Матрац ARGENTUM AMALTEA / Аргентум Амалті"
+                                        data-sb-product-price="5071" data-sb-product-quantity="1"
+                                        data-sb-product-img="./images/matresse-argentum.jpg">
                                         <svg class="popular-product__add-icon" width="25" height="25">
                                             <use href="./images/symbol-defs.svg#basket-product-icon"></use>
                                         </svg>
-                                    </a>
+                                    </button>
+                                    <div class="smart-basket__product-quantity">
+                                        <input class="smart-basket__product-quantity-state" type="number" min="1"
+                                            step="1" pattern="^[0-9]" value="1" data-sb-id="006">
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -562,18 +609,25 @@
                             <p class="popular-product__price">10 008 грн.</p>
                             <ul class="popular-product__add-list">
                                 <li class="popular-product__add-item">
-                                    <a class="popular-product__add-link" href="">
+                                    <button class="popular-product__favorite-btn" href="">
                                         <svg class="popular-product__add-icon" width="26" height="23">
                                             <use href="./images/symbol-defs.svg#favorite-product-icon"></use>
                                         </svg>
-                                    </a>
+                                    </button>
                                 </li>
                                 <li class="popular-product__add-item">
-                                    <a class="popular-product__add-link" href="">
+                                    <button type="button" class="popular-product__bascet-btn"
+                                        data-sb-id-or-vendor-code="007" data-sb-product-name="Диван Браво"
+                                        data-sb-product-price="10008" data-sb-product-quantity="1"
+                                        data-sb-product-img="./images/sofa-bravo.jpg">
                                         <svg class="popular-product__add-icon" width="25" height="25">
                                             <use href="./images/symbol-defs.svg#basket-product-icon"></use>
                                         </svg>
-                                    </a>
+                                    </button>
+                                    <div class="smart-basket__product-quantity">
+                                        <input class="smart-basket__product-quantity-state" type="number" min="1"
+                                            step="1" pattern="^[0-9]" value="1" data-sb-id="007">
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -596,18 +650,25 @@
                             <p class="popular-product__price">8 775 грн.</p>
                             <ul class="popular-product__add-list">
                                 <li class="popular-product__add-item">
-                                    <a class="popular-product__add-link" href="">
+                                    <button class="popular-product__favorite-btn" href="">
                                         <svg class="popular-product__add-icon" width="26" height="23">
                                             <use href="./images/symbol-defs.svg#favorite-product-icon"></use>
                                         </svg>
-                                    </a>
+                                    </button>
                                 </li>
                                 <li class="popular-product__add-item">
-                                    <a class="popular-product__add-link" href="">
+                                    <button type="button" class="popular-product__bascet-btn"
+                                        data-sb-id-or-vendor-code="008" data-sb-product-name="Ліжко МК-5"
+                                        data-sb-product-price="8775" data-sb-product-quantity="1"
+                                        data-sb-product-img="./images/bed-mk-5.jpg">
                                         <svg class="popular-product__add-icon" width="25" height="25">
                                             <use href="./images/symbol-defs.svg#basket-product-icon"></use>
                                         </svg>
-                                    </a>
+                                    </button>
+                                    <div class="smart-basket__product-quantity">
+                                        <input class="smart-basket__product-quantity-state" type="number" min="1"
+                                            step="1" pattern="^[0-9]" value="1" data-sb-id="008">
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -1530,6 +1591,44 @@
             </ul>
         </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="smartbasket/css/smartbasket.min.css">
+
+    <div class="smart-basket__wrapper"></div>
+
+    <script src="./smartbasket/js/smartbasket.min.js"></script>
+
+    <script>
+        $(function () {
+            $('.smart-basket__wrapper').smbasket({
+                productElement: 'popular-product__item',
+                buttonAddToBasket: 'popular-product__bascet-btn',
+                productPrice: 'product__price-number',
+                productSize: 'product__size-element',
+
+                productQuantityWrapper: 'product__quantity',
+                smartBasketMinArea: 'main-header__bascet-btn',
+                countryCode: '+3',
+                smartBasketCurrency: '₴',
+
+                agreement: {
+                    isRequired: true,
+                    isChecked: true,
+                    isLink: 'https://artstranger.ru/privacy.html',
+                },
+                nameIsRequired: false,
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
