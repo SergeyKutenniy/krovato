@@ -9,10 +9,11 @@
 
 // Header styles
 
-@import './components/pre-header';
-@import './components/main-header';
-@import './components/after-header';
-@import './components/header-modal';
+@import './components/main/header/pre-header';
+@import './components/main/header/main-header';
+@import './components/main/header/after-header';
+@import './components/main/header/header-modal';
+@import './components/basket/basket-modal';
 
 // Main content styles
 
